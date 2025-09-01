@@ -1,0 +1,24 @@
+
+---
+
+### 2. `alert-log-template.md`
+```markdown
+# Alert Log: {{issue}}
+
+## 🕒 Timestamp
+- Detected: {{date}} {{time}}
+- Resolved: 
+
+## 📍 Source
+- System: Buzzgate Monitor
+- Sensor: `sensor.cpu_load`
+- Trigger: `> 90% for 5 min`
+
+## 🔍 Root Cause
+- Summary:
+- Logs reviewed:
+- Related commits:
+
+## ✅ Resolution
+- Action taken:
+- Follow-up needed:
