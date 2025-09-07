@@ -9,7 +9,12 @@
 - **Technical Skills:** Docker Compose, MariaDB, InfluxDB, Nextcloud, Synology NAS, SSH, ACLs, YAML, PHP, Linux admin, network diagnostics
     
 - **Workflow Style:** Modular, version-controlled, YAML-driven, prefers persistent context and stepwise troubleshooting
-    
+
+	## github: 
+	project 	
+	https://github.com/ndyjrdn/buzzgate
+	 Obsidian vault 
+	 https://github.com/ndyjrdn/BuzzgateVault
 
 ### 🏠 **Smart Home Ecosystem: Buzzgate**
 
@@ -90,3 +95,16 @@
 - Modular project tracking with LLM-powered planning
     
 - LAN-accessible retro gaming with persistent saves
+
+🥽 **IP Addresses**
+
+
+
+| Device         | IP Address    | Notes                 |     |
+| -------------- | ------------- | --------------------- | --- |
+| Router         | 192.168.1.1   | Default gateway       |     |
+| NAS            | 192.168.1.3   | Synology main storage |     |
+| Buzzgate Brain | 192.168.1.177 | Beelink mini PC       |     |
+| Pi-hole        | 192.168.1.177 | DNS filtering         |     |
+| Zigbee Coord   | 192.168.1.40  | TubeZB USB stick      |     |
+|                |               |                       |     |
