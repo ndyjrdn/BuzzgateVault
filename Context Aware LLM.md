@@ -110,10 +110,10 @@
 |                   |               |                       |     |
 | Service/Container |               | container name        |     |
 | HomeAssistant     | 8123          | cy-ha                 |     |
-| ollama            | 11434         |                       |     |
+| ollama            | 11434         | cy-ai-ollama          |     |
 | open-webui        | 6996          | cy-ai-webui           |     |
-| whisper           | 10300         |                       |     |
-| piper             | 10200         |                       |     |
+| whisper           | 10300         | cy-ai-whisper         |     |
+| piper             | 10200         | cy-ai-piper           |     |
 | glances           | 61208         | glances               |     |
 | node-exporter     | 9100          | node-exporter         |     |
 | prometheus        | 9090          | prometheus            |     |
