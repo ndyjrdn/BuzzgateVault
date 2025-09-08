@@ -126,6 +126,8 @@
 | nextcloud         | 8081          | cycloud               |     |
 | pi-hole           | 8080          | cyhole                |     |
 | portainer         | 9000          | portainer             |     |
+
+
 **Network**
   networks:
   compose_cynet:
