@@ -152,3 +152,32 @@ Recent upgrades include:
   networks:
   compose_cynet:
     external: true
+
+🧠 System Status
+ TubeZB coordinator is up and running, integrated with Zigbee2MQTT
+- Home Assistant is installed and fully operational on Brain
+- Zigbee bulbs are already paired and exposed via Zigbee2MQTT
+- Containers referenced in this document are active running containers.
+
+🧩 Scene Infrastructure
+- Scenes are defined using YAML in Home Assistant
+- Motion sensors (e.g. `binary_sensor.motion_bedroom`) are active and mapped
+- Time-based automations use `sun.sun` and `sensor.time` entities
+
+🧠 Naming Conventions
+- Scenes follow Cyclone-themed naming (e.g. `Cyclone Calm`, `Storm Prep`)
+- Light groups are named using `group.` prefix and descriptive suffixes
+
+🧰 Automation Philosophy
+- Automations are modular, versioned, and stored in Git-backed Obsidian vault
+- Preference for local-first logic, minimal cloud dependencies
+- Scene logic adapts to time of day, motion, and household routines
+##  Scene template
+scene:
+  name: [Scene Name]
+  entities:
+    - service: light.turn_on
+      entity_id: [Light Group]
+      data:
+        brightness_pct: [Brightness]
+        color_name: [Color]
