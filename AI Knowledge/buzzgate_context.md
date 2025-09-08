@@ -1,4 +1,4 @@
-### 👤 **User Profile**
+ 👤 **User Profile**
 
 - **Name:** Andy
     
@@ -29,6 +29,26 @@
     - Family-friendly access and emergency alerting
         
     - Monitoring + alerting for uptime, WAN speed, zombie processes, etc.
+    - 
+    ##  Buzzgate Context
+
+Buzzgate is a fully local smart home ecosystem built on Zigbee 3.0, MQTT, and modular YAML automations. It uses a Beelink mini PC ("Brain") to orchestrate containers for monitoring, alerting, and scene control. Key components include:
+
+- Zigbee2MQTT with TubeZB coordinator
+- Mosquitto MQTT broker
+- Home Assistant with custom scenes and automations
+- Glances for system vitals (CPU, memory, disk, zombie processes)
+- Grafana + InfluxDB for WAN speed and time-series monitoring
+- Alertmanager for modular notifications (Pushover preferred)
+- NAS-mounted volumes for persistent memory and media
+- Git-backed Obsidian vault for logs, planning, and scene design
+
+Naming conventions follow a Cyclone-themed schema (e.g. `cy-ai`, `BuzzgateVault`, `Skippy`, `Brain`). YAML workflows are modular, versioned, and designed for maintainability.
+
+Recent upgrades include:
+- Migration from MariaDB to InfluxDB for monitoring
+- Scene refactors for mesh reliability
+- Integration of Nextcloud calendars with Home Assistant
         
 - **Key Components:**
     
