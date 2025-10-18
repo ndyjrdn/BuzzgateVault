@@ -11,7 +11,7 @@
 ### Pictures as data
 ![[{B1326C45-DD4B-46BF-B60F-31E908BDD95C}.png]]
 
-0 = black 255 = black
+0 = black 255 = white
 
 ![[{6745CAC5-0CF0-4C1A-9D3F-A054157F0C09}.png]]
 
@@ -232,4 +232,14 @@ Table 2.13.1: Arithmetic operators.
 🚩 ==A good practice is to minimize the use of literal numbers in code.==
 
 - A variable name preceeded by 'final' creates a variable that is constant and can't be changed later in the script
-- 
+
+
+# 1.9 Hello, World! In Java
+```
+
+public class HelloWorld {
+	public state void main (String[] args) {
+		System.out.println("Hello, World!")
+	}
+}
+```
