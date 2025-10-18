@@ -139,7 +139,7 @@ Here is a list of the Java math operators.
 To convert from string to numeric we can use parse methods.  IE
 	- Interger.parseInt
 	- Float.parseFloat
-	- Double.parsDouble
+	- Double.parseDouble
 - Cast operations and parse methods are expressions - Expressions always evaluate to a value
 - 
 
@@ -241,5 +241,33 @@ public class HelloWorld {
 	public state void main (String[] args) {
 		System.out.println("Hello, World!")
 	}
+}
+```
+
+# 2.19 Lab 01 - Properties of a Circle
+
+```
+class Circle {
+
+  public static void main(String[] args) {
+
+      System.out.println("Properties of a Circle");
+      System.out.println("Radius             : 10.25");
+      System.out.println("Diameter           : " + (10.25 * 2));
+      System.out.println("Circumference      : " + (3.1415 * (10.25 * 2)));
+      System.out.println("Area               : " + (3.1415 * (10.25 * 10.25)));
+      System.out.println("Area of Semicircle : " + ((3.1415 * (10.25 * 10.25))/ 2 ));
+            System.out.println();
+      System.out.println("Properties \"Rounded\" Down");
+      System.out.println("Radius             : " + (int)(10.25));
+      System.out.println("Diameter           : " + (int)(10.25 * 2));
+      System.out.println("Circumference      : " + (int)(3.1415 * (10.25 * 2)));
+      System.out.println("Area               : " + (int)(3.1415 * (10.25 * 10.25)));
+      System.out.println("Area of Semicircle : " + (int)((3.1415 * (10.25 * 10.25))/ 2 ));
+
+  
+
+  }
+
 }
 ```
