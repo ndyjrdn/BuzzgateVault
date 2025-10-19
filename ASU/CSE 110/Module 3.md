@@ -90,4 +90,35 @@ an int can only store number up to around 2 billion.  After that the binary repr
 [[Integer data types]]
 short and byte are rarely used except for managing memory if needed
 [[Floating point data types]]
-float here is simil
+float here is similar to short and byte above
+Overflow in a float is infinity
+
+![[{73EFF3A7-D7BA-4D33-84F6-A7B5B3FF1BBB}.png]]
+
+## 3.9 Random number
+- the Random class provides methods that return a random integer 
+```
+import java.util.Random;
+
+public class ThreeRandomValues {
+   public static void main(String[] args) {
+      Random randGen = new Random();  // New random number generator
+
+      System.out.println(randGen.nextInt());
+      System.out.println(randGen.nextInt());
+      System.out.println(randGen.nextInt());
+   }
+}
+959650663
+324135575
+1735989143
+```
+- The statement `import java.util.Random;` enables use of the Random class. The statement 
+- `Random randGen = new Random();` creates a new random number generator object named randGen. 
+- The method call randGen.nextInt() can then be used to get a random integer ranging from  to .
+
+randGen.nextInt(10) will return a random value from  0 to 9
+
+to return a random value from a range 
+![[Pasted image 20251019153527.png]]
+
