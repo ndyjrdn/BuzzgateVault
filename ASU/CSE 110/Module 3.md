@@ -46,4 +46,13 @@ Modulo (represented for %) is the remainder.
 	- char userKey = 'a'
 - To get a specific character from a string use .charAt()
 	- scnr.next().charAt(0) is first letter
-- 
+- Stored as a number under the hood.  (ascii coding)
+[[ASCII Symbols]]
+
+[[Escape sequences]]
+
+### outputting multiple character variables with ont output statement
+==A programmer can output multiple character variables with one statement as follows: `System.out.print("" + c1 + c2);`. The initial "" tells the compiler to output a string of characters, and the +'s combine the subsequent characters into such a string. Without the "", the compiler will simply add the numerical values of c1 and c2, and output the resulting sum.==
+
+### Common errors
+=using " "  instead of '' when assigning  a char.  But don't forget the ' ' or
