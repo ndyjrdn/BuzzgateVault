@@ -83,3 +83,11 @@ Mixing next() and nextLine() can be tricky, because next() leaves the newline in
 
 ## 3.7 integer overflow
 ==An overflow occurs when the value being assigned to a variable is greater than the maximum value the variable can store.==
+
+an int can only store number up to around 2 billion.  After that the binary representation is too long.  Switch to long type.  The issue could be in interim steps so watch out.
+
+## 3.8 Numerid data types
+[[Integer data types]]
+short and byte are rarely used except for managing memory if needed
+[[Floating point data types]]
+float here is simil
