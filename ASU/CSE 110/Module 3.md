@@ -13,3 +13,5 @@ Table 3.1.1: A few common methods from the standard Math class.
 |sqrt(x)|Square root of x|Math.sqrt(9.0) evaluates to 3.0.|
 |pow(x, y)|Power:|Math.pow(6.0, 2.0) evaluates to 36.0.|
 |abs(x)|Absolute value of x|Math.abs(-99.5) evaluates to 99.5.|
+
+
