@@ -124,3 +124,15 @@ to return a random value from a range
 
 #### pseudo-random
 random numbers are actually calculated based on the previous number.  The first is based on the current timestamp(seed).  We can set the see when the Random method is called like Random randGen = new Random(15);  This enables reproducibility in 'random' values
+
+
+## 3.10 Debugging
+
+**Debugging** is the process of determining and fixing the cause of a problem in the program (also called **troubleshooting**)
+ - predict possible cause
+ - test
+ - repeat
+
+==Note that a temporary statement commonly has a "FIXME" comment to remind the programmer to delete this statement.==
+Debug or print statement
+
