@@ -146,3 +146,22 @@ Debug or print statement
 
 ## 3.13
 Using variables in expressions, rather than numbers like 40, makes a program more general and makes expressions more meaningful when read too.
+
+3.12 - 3.14 PRACTICE
+
+## 3.15 What can we do with variables.
+Storage and retrieval
+
+The power of vars come from how we use them.  Naming things
+They always have a data type.
+
+==Variable
+a name that refers to a memory location where a value is stored.
+The two most important rules for using variables in Java are:
+**1. A variable must be declared before it can be used
+2A variable can only store values of its declared type**
+
+
+
+
+
