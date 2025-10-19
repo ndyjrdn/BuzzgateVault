@@ -122,3 +122,5 @@ randGen.nextInt(10) will return a random value from  0 to 9
 to return a random value from a range 
 ![[Pasted image 20251019153527.png]]
 
+#### pseudo-random
+random numbers are actually calculated based on the previous number.  The first is based on the current timestamp(seed).  We can set the see when the Random method is called like Random randGen = new Random(15);  This enables reproducibility in 'random' values
