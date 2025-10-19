@@ -136,3 +136,7 @@ random numbers are actually calculated based on the previous number.  The first 
 ==Note that a temporary statement commonly has a "FIXME" comment to remind the programmer to delete this statement.==
 Debug or print statement
 
+- Manually set a variable to a value.
+- Insert print statements to observe variable values.
+- Comment out unused code.
+- Visually inspect the code (not every test requires modifying/running the code).
