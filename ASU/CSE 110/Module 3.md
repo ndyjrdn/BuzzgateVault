@@ -31,4 +31,6 @@ Modulo (represented for %) is the remainder.
 ### Type casting
 - precede a value with a type to cast it to another type 
 	- (double)7 converts int 7 to 7.0
-	- 
+- A common error is to accidentally perform integer division when floating-point division was intended. The program below undesirably performs integer division rather than floating-point division.
+- A common error is to cast the entire result of integer division, rather than the operands, thus not obtaining the desired floating-point division.
+- 
