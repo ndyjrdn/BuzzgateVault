@@ -80,3 +80,6 @@ Mixing next() and nextLine() can be tricky, because next() leaves the newline in
 
 ![[Pasted image 20251019150052.png]]
 
+
+## 3.7 integer overflow
+==An overflow occurs when the value being assigned to a variable is greater than the maximum value the variable can store.==
