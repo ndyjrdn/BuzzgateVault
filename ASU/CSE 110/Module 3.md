@@ -182,6 +182,8 @@ There are three parts to a variable declaration:
 - Simplify expressions
 
 Choose Descriptive Names for all of your variables.
+Use Variables to give descriptive names to the values in your code.
+Use Variables to simplify complex expressions.
 ![[Pasted image 20251019164637.png]]
 
 
