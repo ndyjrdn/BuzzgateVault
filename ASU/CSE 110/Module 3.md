@@ -59,4 +59,16 @@ Modulo (represented for %) is the remainder.
 
 ## 3.6 Strings
 - a string is a sequence of characters
-- a string li
+- a string literal surrounds a character sequence with double quotes line "Hello"
+
+#### string variables and assignments
+- a String variable is a 'reference type' so the variable refers to an object.
+- an object consists of internal data items plus operations that can be performed on that data. 
+
+#### getting a string without whitespaces from input 
+===A whitespace character is a character used to represent horizontal and vertical spaces in text, and includes spaces, tabs, and newline characters. Ex: "Oh my goodness!" has two whitespace characters, one between h and m, the other between y and g.
+Below shows the basic approach to get a string from input into variable userString. The approach automatically skips initial whitespace, then gets characters until the next whitespace is seen.
+
+==userString = scnr.next();==
+
+
