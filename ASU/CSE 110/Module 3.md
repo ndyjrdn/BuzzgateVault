@@ -186,4 +186,7 @@ Use Variables to give descriptive names to the values in your code.
 Use Variables to simplify complex expressions.
 ![[Pasted image 20251019164637.png]]
 
+Constant (final) variables declare in all caps
 
+increment/decrement shortcuts
+count++ / count--
