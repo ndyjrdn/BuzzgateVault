@@ -157,11 +157,31 @@ They always have a data type.
 
 ==Variable
 a name that refers to a memory location where a value is stored.
-The two most important rules for using variables in Java are:
-**1. A variable must be declared before it can be used
-2A variable can only store values of its declared type**
+
+**The two most important rules for using variables in Java are:**
+1. A variable must be declared before it can be used
+2. A variable can only store values of its declared type
 
 
+This line of code int x; is called a variable declaration because it declares to the computer that we intend to store int values in a variable named x, so the computer needs to pick a memory location where our int value can be stored. All variable declarations look like this in Java:
 
+```
+<dataType> <variableName> [= <expression>];
+
+There are three parts to a variable declaration:
+<dataType> the data type of the variable
+<variableName> the name of the variable
+[= <expression>] an [optional] initializer expression
+
+```
+
+
+## 3.16 why do we use variables
+- Name things
+- Generalize expressions to make them more useful and powerful
+- Simplify expressions
+
+Choose Descriptive Names for all of your variables.
+![[Pasted image 20251019164637.png]]
 
 
