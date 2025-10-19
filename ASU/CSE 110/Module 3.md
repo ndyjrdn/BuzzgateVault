@@ -140,3 +140,9 @@ Debug or print statement
 - Insert print statements to observe variable values.
 - Comment out unused code.
 - Visually inspect the code (not every test requires modifying/running the code).
+
+## 3.11 Style Guides
+[[Style Guide]]
+
+## 3.13
+Using variables in expressions, rather than numbers like 40, makes a program more general and makes expressions more meaningful when read too.
