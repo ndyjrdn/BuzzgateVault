@@ -23,3 +23,12 @@ Modulo (represented for %) is the remainder.
 	IE 23 % 10 = 3
 
 ## 3.3 Type conversions
+
+- Converting a number from one type (int) to another (float)
+- for arithmetic if either is a double both are converted automatically
+- for assignment the value is converted to the type the variable without loss of precision.
+
+### Type casting
+- precede a value with a type to cast it to another type 
+	- (double)7 converts int 7 to 7.0
+	- 
