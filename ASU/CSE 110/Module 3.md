@@ -33,4 +33,17 @@ Modulo (represented for %) is the remainder.
 	- (double)7 converts int 7 to 7.0
 - A common error is to accidentally perform integer division when floating-point division was intended. The program below undesirably performs integer division rather than floating-point division.
 - A common error is to cast the entire result of integer division, rather than the operands, thus not obtaining the desired floating-point division.
+
+## 3.4 Binary
+ 0s and 1s
+
+# 3.5 Characters
+
+- char data type 
+- single character
+- ie 'm'
+- initialize with single quotes  
+	- char userKey = 'a'
+- To get a specific character from a string use .charAt()
+	- scnr.next().charAt(0) is first letter
 - 
