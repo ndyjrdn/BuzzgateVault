@@ -55,4 +55,8 @@ Modulo (represented for %) is the remainder.
 ==A programmer can output multiple character variables with one statement as follows: `System.out.print("" + c1 + c2);`. The initial "" tells the compiler to output a string of characters, and the +'s combine the subsequent characters into such a string. Without the "", the compiler will simply add the numerical values of c1 and c2, and output the resulting sum.==
 
 ### Common errors
-=using " "  instead of '' when assigning  a char.  But don't forget the ' ' or
+=using " "  instead of ' ' when assigning  a char.  But don't forget the ' ' or it will not compile
+
+## 3.6 Strings
+- a string is a sequence of characters
+- a string li
