@@ -22,3 +22,4 @@ int division by 0 will be an error
 Modulo (represented for %) is the remainder.
 	IE 23 % 10 = 3
 
+## 3.3 Type conversions
