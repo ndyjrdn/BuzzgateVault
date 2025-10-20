@@ -28,3 +28,5 @@ sub-specifier is the number between the % and the format.  IE "%.1f" prints a fl
 #### Strings
 
 #### Flushing output
+
+octal integer
