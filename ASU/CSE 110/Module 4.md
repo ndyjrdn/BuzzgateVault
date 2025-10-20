@@ -25,3 +25,6 @@ sub-specifier is the number between the % and the format.  IE "%.1f" prints a fl
 
 #### Integer Values
 
+#### Strings
+
+#### Flushing output
