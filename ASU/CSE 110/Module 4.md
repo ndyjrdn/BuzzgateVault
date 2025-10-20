@@ -7,3 +7,11 @@ System.out.println("test"); These do the same thing.  print the text and return 
 
 
 ## 4.2 output formatting
+
+input, output and formatting
+
+![[{875FB592-81F5-4D23-89D3-ECDA6EC13646}.png]]
+
+![[{259D5729-6504-44C9-BB72-0E2BA10A1E33}.png]]
+
+#### printf() and format() methods
