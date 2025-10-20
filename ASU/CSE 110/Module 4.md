@@ -22,3 +22,6 @@ input, output and formatting
 
 sub-specifier is the number between the % and the format.  IE "%.1f" prints a float with 1 digit after the decimal
 [[Format specifiers]]
+
+#### Integer Values
+
