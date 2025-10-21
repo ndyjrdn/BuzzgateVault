@@ -105,5 +105,22 @@ Must declare a variable before using it.
 - Decrementing: typically subtract 1
 	- breadsticks--; // Using Java's Decrement Operator
 	- breadsticks -= 1; // Using Java's Subtraction Assignment Operator
-- Accumulate a t
+- Accumulate a total
+	- 
+#### 5.3 Swap the values or 2 variables
 
+What we need is a place to temporarily store one of the values.  Variables store values!
+Figure 5.3.1: Try this:
+int temporaryValue = month;   // Save value of month in temporary_value
+month = day;                  // Assign value of day to variable month
+day = temporaryValue;         // Assign saved value of month to day
+
+This is a very common pattern for swapping values using a temporary variable.
+
+#### 5.4 Input->Processing -> Output Pattern
+
+how to program with this (input-process-output) pattern
+- Generalization: Flexible and scalable
+- Abstraction:  methods/functions (Didn't use these terms but...)
+- Maintainability: readable, scale, correct
+- 
