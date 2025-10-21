@@ -128,4 +128,14 @@ how to program with this (input-process-output) pattern
 #### 5.5 how can we trace a program
  🤖 Sequence matters for this
  - Predictability
- - 
+#### 5.6 Strings & string methods
+- Strings are not primitive (built in) types in Java
+-  String literals use ""
+	- String name = "Bob Smith";
+-  + Concatenation
+	- ![[Pasted image 20251021175929.png]]
+	- next() - next word
+	- nextLine() - line to next newline
+	- ![[{7D859D61-E132-42B4-8D02-B1270DBE1D13} 1.png]]
+	- 
+	
