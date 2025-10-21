@@ -137,5 +137,10 @@ how to program with this (input-process-output) pattern
 	- next() - next word
 	- nextLine() - line to next newline
 	- ![[{7D859D61-E132-42B4-8D02-B1270DBE1D13} 1.png]]
+	- Strings are a sequence of chars
+	- charAt() - extracts a character from a specific index (starting with 0)
+	- Length() - Returns the number of characters in the string (including spaces)
+	- substring() - Pull out the chars in the range of inputs.
+	- indexOf() - Returns the index number of a letter in a sequence
 	- 
 	
