@@ -123,4 +123,9 @@ how to program with this (input-process-output) pattern
 - Generalization: Flexible and scalable
 - Abstraction:  methods/functions (Didn't use these terms but...)
 - Maintainability: readable, scale, correct
-- 
+- Modular
+
+#### 5.5 how can we trace a program
+ 🤖 Sequence matters for this
+ - Predictability
+ - 
