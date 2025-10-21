@@ -28,5 +28,25 @@ sub-specifier is the number between the % and the format.  IE "%.1f" prints a fl
 #### Strings
 
 #### Flushing output
+System.out.flush()
 
-octal integer
+## 4.3 Getting inputs
+- Import scanner
+	- Import java.util.Scanner;
+
+> - Instantiate
+	- Scanner input = new Scanner(System.in);
+		- Scanner object
+		- Named input
+		- 'New'
+		- System.in connects to input
+- ![[{0E9BF5B7-CC85-46AC-A602-577523C471ED}.png]]
+
+
+## 4.4 introduction to Entrepreneurial Mindset
+	All engineers are entrepreneurs
+	Skillset = power
+	mindset = direction
+ - Curiosity
+ - Connections
+ - 
