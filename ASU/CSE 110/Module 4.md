@@ -92,3 +92,18 @@ class Main {
   }
 }
 ```
+
+## Chapter 5
+#### 5.1 Why is sequence important
+The computer executes instructions in sequence
+Must declare a variable before using it.
+
+#### 5.2 Common patterns with variables
+- Incrementing: typically add 1
+	- pizzas++; // Using Java's Increment Operator
+	- pizzas += 1; // Using Java's Addition Assignment Operator
+- Decrementing: typically subtract 1
+	- breadsticks--; // Using Java's Decrement Operator
+	- breadsticks -= 1; // Using Java's Subtraction Assignment Operator
+- Accumulate a t
+
