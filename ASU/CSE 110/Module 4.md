@@ -142,5 +142,11 @@ how to program with this (input-process-output) pattern
 	- Length() - Returns the number of characters in the string (including spaces)
 	- substring() - Pull out the chars in the range of inputs.
 	- indexOf() - Returns the index number of a letter in a sequence
-	- 
+	- .equals() for strings is T/F if they match (T) else (F)
+	- compareTo() - evaluates for alphabetical order
+		- - if the it comes before the first
+		- + if after
+		-  0 if they are the same
+		- 🚩Capitals come before lowercase
+		- 
 	
