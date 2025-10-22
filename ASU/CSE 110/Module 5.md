@@ -12,3 +12,12 @@
 	
 	- the best way to get something done in a program is to call a method that does that thing
 	- 
+## 6.2 how to call a method
+🚩A method call has 2 major parts, the ==method name==, and the ==argument list==.
+- argument lists are ALWAYS separated by commas
+
+## 6.3 what are arguments
+🚩Arguments give methods what they need
+- can be literals, variables, or expressions.  All evaluate to a value
+- Arguments are evaluated to values before the method is called, the values are passed to the methods
+- 
