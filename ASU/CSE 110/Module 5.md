@@ -20,4 +20,9 @@
 🚩Arguments give methods what they need
 - can be literals, variables, or expressions.  All evaluate to a value
 - Arguments are evaluated to values before the method is called, the values are passed to the methods
+- When a method returns a value, a call to that method is an expression that evaluates to the returned value. This means that we can use a call to a method that returns a value of a given data type anywhere we can use an expression of that data type.
+- We can use a call to a method that returns a value, as a sub-expression within a larger expression. Here is an example where the method call Math.sqrt(area) is a sub-expression of the larger expression 4 * Math.sqrt(area).
+
+## 6.5 some standard library methods
+- mechanics of function calls
 - 
