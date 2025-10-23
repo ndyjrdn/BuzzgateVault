@@ -31,4 +31,8 @@
 - public and static are access modifiers
 	- public means the method can be called from any class
 	- static means it only uses values passed to it.
-- A method can return
+- A method can return one value via a return statement
+- a parameter is an input to the method
+	- Could be 0 or several (comma separated)
+- an argument is the value provided to the parameter
+- 
