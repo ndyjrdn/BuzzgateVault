@@ -28,4 +28,11 @@
 
 ## 6.6 String methods
 
+ charAt
+ length
+ someString.charAt(1) or someString.length()
+ 
+ #### finding a string in a string
+ indexof() returns the index where the argument starts.
+ [[String methods]]
  
