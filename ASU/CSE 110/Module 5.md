@@ -24,5 +24,8 @@
 - We can use a call to a method that returns a value, as a sub-expression within a larger expression. Here is an example where the method call Math.sqrt(area) is a sub-expression of the larger expression 4 * Math.sqrt(area).
 
 ## 6.5 some standard library methods
-- mechanics of function calls
-- 
+- mechanics of function calls (he does say FUNCTIONS)
+
+## 6.6 String methods
+
+ 
