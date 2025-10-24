@@ -70,3 +70,17 @@ public class CalcPyramidVolume {
 - A method that just prints and does not return anything uses the keyword void
 - Methods that use void are unsurprisingly called void methods
 - One benefit of a print method is that complex output statements can be written in code once. Then the print method can be called multiple times to produce the output instead of rewriting complex statements for every necessary instance. Changes to output and formatting are made easier and are less prone to error.
+
+## 7.3 methods with no parameters and return value
+
+🚩🚩If there is not already a method to do what we want,
+then we should define a method to do it.🚩🚩
+![[Pasted image 20251023201137.png]]
+
+Notice that a method definition may include some access modifiers which will be discussed in more detail later. We will be using the public static access modifiers for now. A method definition will always have these parts:
+1.  <returnType> - the type of value this method will return
+2. <methodName> - the name for this list of instructions
+3. (<parameterList>) - describing the arguments that must be passed to this method
+4. {<methodBody>} - the list of instructions to execute when this method is called
+
+
