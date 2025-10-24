@@ -65,6 +65,6 @@ public class CalcPyramidVolume {
    }
 ```
 
-```
+## 7.2 Print methods
 
-```
+- A method that just prints and does not return anything uses the keyword void
