@@ -68,3 +68,5 @@ public class CalcPyramidVolume {
 ## 7.2 Print methods
 
 - A method that just prints and does not return anything uses the keyword void
+- Methods that use void are unsurprisingly called void methods
+- One benefit of a print method is that complex output statements can be written in code once. Then the print method can be called multiple times to produce the output instead of rewriting complex statements for every necessary instance. Changes to output and formatting are made easier and are less prone to error.
