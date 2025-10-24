@@ -99,5 +99,21 @@ public static void printBunny() {
 
 ### Misconceptions
 	1. order of Args and params
-	2. names of Args and paarams
+	2. names of Args and params
 1. The param vars are assigned values in the order the arguments are listed.
+2. Names of params doesn't matter.  The order matters
+
+### Mechanics of method calls (UDM)
+### Call stack
+
+The stack is was also called the local variable Local as opposed to global memory.   This helps define scope of variables and methods
+
+When a method is called 5 things happen
+ 1. Stack frame is created
+ 2. Return point is recorded
+ 3. Local variables are created
+ 4. Variables are populated
+ 5. Instructions are executed
+
+When a method finishes 3 things happen:
+1.  
