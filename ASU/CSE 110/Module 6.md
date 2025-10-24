@@ -95,4 +95,9 @@ public static void printBunny() {
 
 ## 7.4 Define methods with parameters
 -  Arguments are the values passed to methods
-- 
+-  Parameter is the value needed.  The variable that stores the arguments
+
+### Misconceptions
+	1. order of Args and params
+	2. names of Args and paarams
+1. The param vars are assigned values in the order the arguments are listed.
