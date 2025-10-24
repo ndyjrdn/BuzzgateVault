@@ -35,4 +35,36 @@
 - a parameter is an input to the method
 	- Could be 0 or several (comma separated)
 - an argument is the value provided to the parameter
-- 
+
+practice methods 
+```
+import java.util.Scanner;
+
+public class CalcPyramidVolume {
+
+   public static double pyramidVolume(double userLength, double userWidth, double userHeight){
+      double vol;
+      double baseArea;
+      
+      baseArea = userLength * userWidth;
+      vol = (baseArea * userHeight) * 1/3 ;
+      return vol;
+   }
+
+   public static void main (String [] args) {
+      Scanner scnr = new Scanner(System.in);
+      double userLength;
+      double userWidth;
+      double userHeight;
+
+      userLength = scnr.nextDouble();
+      userWidth = scnr.nextDouble();
+      userHeight = scnr.nextDouble();
+
+      System.out.println("Volume: " + pyramidVolume(userLength, userWidth, userHeight));
+   }
+```
+
+```
+
+```
