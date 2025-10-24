@@ -78,9 +78,21 @@ then we should define a method to do it.🚩🚩
 ![[Pasted image 20251023201137.png]]
 
 Notice that a method definition may include some access modifiers which will be discussed in more detail later. We will be using the public static access modifiers for now. A method definition will always have these parts:
-1.  <returnType> - the type of value this method will return
-2. <methodName> - the name for this list of instructions
-3. (<parameterList>) - describing the arguments that must be passed to this method
-4. {<methodBody>} - the list of instructions to execute when this method is called
+1.  ==return type== - the type of value this method will return
+2. ==methodName== - the name for this list of instructions
+3. ==(parameterList)== - describing the arguments that must be passed to this method
+4. =={methodBody}== - the list of instructions to execute when this method is called
 
+public static void printBunny() {
+   print(" (\\(\\   ")
+   print(" (-.-)    ")
+   print(" O_(\")(\") ")
+}
+ - no return type defined
+ - no parameters
 
+### Mechanics of method calls (UDM)
+
+## 7.4 Define methods with parameters
+-  Arguments are the values passed to methods
+- 
