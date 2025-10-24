@@ -109,11 +109,13 @@ public static void printBunny() {
 The stack is was also called the local variable Local as opposed to global memory.   This helps define scope of variables and methods
 
 When a method is called 5 things happen
- 1. Stack frame is created
- 2. Return point is recorded
- 3. Local variables are created
- 4. Variables are populated
+ 1. Stack frame is created in stack memory
+ 2. Return point is recorded in stack frame
+ 3. Local variables are created from method (local is scoped to the method) 
+ 4. Parameter variables are assigned (variable values are populated)
  5. Instructions are executed
 
 When a method finishes 3 things happen:
-1.  
+1.  Local variables are removed from the stack
+2. Stack is removed
+3. Control returned to main
