@@ -72,4 +72,13 @@ Can join operators like![[Pasted image 20251029165226.png]]
 
 ## 8.7 Detecting multiple features with branches
 - This is just a sequence of if statements.  Each is evaluated and executed independently
-- 
+
+##  8.8 Common branching errors
+
+- With one statement branches the braces are strictly necessary but use them for readability 
+- Using = instead of ==
+
+
+##  8.9 Example
+##  8.10 order of operations
+[[Operator Precedence Rules]]
