@@ -67,3 +67,9 @@ if/else if / else if / yada / else
 	}
 	else{ The gap is 21 to 50}
 ```
+
+Can join operators like![[Pasted image 20251029165226.png]]
+
+## 8.7 Detecting multiple features with branches
+- This is just a sequence of if statements.  Each is evaluated and executed independently
+- 
