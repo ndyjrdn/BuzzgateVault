@@ -51,4 +51,19 @@ if/else if / else if / yada / else
 ## 8.4 Detecting ranges with branches
 - relational operators are also called comparison operators
 - ALWAYS boolean
-- 
+
+## 8.5 Detecting ranges using logical operators
+[[Logical Operators]]
+
+## Detecting rages with gaps
+- If the range isn't in the gap.  
+- ie
+```
+	if(age < 21){
+	   output this
+	} 
+	else if(age > 50){
+		output this
+	}
+	else{ The gap is 21 to 50}
+```
