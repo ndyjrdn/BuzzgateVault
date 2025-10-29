@@ -119,3 +119,84 @@ When a method finishes 3 things happen:
 1.  Local variables are removed from the stack
 2. Stack is removed
 3. Control returned to main
+
+## 7.5 Reasons for defining methods
+
+- We can name information - in this case, a series of actions
+- ==Improve readability==
+	- methods may add lines of code because of formatting/lniting
+- ==Modular and incremental dev==
+	 - Modular development is the process of dividing a program into separate modules that can be developed and tested separately and then integrated into a single program.
+	- Incremental development is a process in which a programmer writes, compiles, and tests a small amount of code, then writes, compiles, and tests a small amount more (an incremental amount), and so on.
+	- A method stub is a method definition whose statements have not yet been written. 
+	- ### Example stub
+
+```
+public static double calcMpg(double distMiles, double gasGallons) {
+      System.out.println("FIXME: Calculate MPG");
+      return 0.0;
+   }
+//Essentially a placeholder for planning a future method
+
+```
+
+- Avoid writing duplicate code
+
+### The skill of decomposing a program's behavior into a good set of methods is a fundamental part of programming that helps characterize a good programmer. Each method should have easily-recognizable behavior, and the behavior of main() (and any method that calls other methods) should be easily understandable via the sequence of method calls. ==A general guideline (especially for beginner programmers) is that a method's definition usually shouldn't have more than about 30 lines of code, although this guideline is not a strict rule.==
+
+## 7.6 Writing mathematical methods
+
+ - It is valid and expected to break methods deeper and call methods inside of methods
+## 7.7 Scope of variable method defs
+- when java needs a variable value in a function it runs a scope resolution process to first look for it in the local scope (the function scope and value) and if it doesn't find it there it checks the global variable.
+- the defined variable or method is only visible to part of the program.  The Scope
+- A variable declared in a method is only available to the method.  
+- A variable declared within a class but outside any method is called a _class member variable_ or field, in contrast to a local variable defined inside a method. A field's scope extends from the class's opening brace to the class's closing brace, and reaches into methods regardless of where the field is declared within the class. (Global Variable or field)
+- A local variable's scope starts when it's declared.
+- A method also has scope, which extends from the class's opening brace to the class's closing brace. Thus, a method can access any other method defined in the same class, regardless of the order in which the methods are defined.
+
+## 7.8 what can we do with a method
+
+1. Define it
+2. Call it.
+- The power of methods comes from how we use them.
+	- Simplify design, construction, testing and debugging
+		- Methods allow
+			- Named operations
+			- Deconstruct complex into simple parts
+			- build complex programs out of simple pieces
+
+
+	
+designing vs writing programs
+	- diving right in and coding is fun and you be educational but it leads to problems...no shit
+	- Take time to think about the problem
+	- design the solution
+	- THEN start coding
+	- A good program is full or functions
+
+-Pyramids
+
+- public is a visibility modifier meaning it can be used by any method in the program
+- static operates on the class not the  
+- Non-static methods create an object and then do stuff 
+	- Scanner scnr = new Scanner(System.in);
+	- This is a non_static method because the new Scanner is an object.
+-
+## 7.9 Method name overloading
+
+There CAN be 2(or more) methods with the same name with differing parameters - The compiler will figure it out based on the arguments given
+
+## 7.10 How methods work
+
+## 7.11 common errors
+- Copying code and forgetting to update it for the new context
+- Returning the wrong value
+-  Forgetting/failing to return a value
+
+## 7.12 Using scanner in methods
+- A program should use only one scanner per input stream
+- you pass the scanner as a argument
+	- ==public static double getPizzaCalories(Scanner scnr)==
+- 
+- 
