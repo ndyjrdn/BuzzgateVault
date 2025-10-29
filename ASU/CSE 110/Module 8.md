@@ -24,3 +24,24 @@ Repetition (loops)
 - An if-else can be extended to an if-elseif-else structure. Each branch's expression is checked in sequence; as soon as one branch's expression is found to be true, that branch is taken. If no expression is found true, execution will reach the else branch, which then executes.
 -
 ## Detecting equal values with branches
+- a single selection decision is when basically a yes/no to run instructions or not.
+- If false, no else is provided and the inst. is skipped
+- ![[Pasted image 20251029144215.png]]
+- {} braces
+- [] brackets
+
+ - can have multiple branches 
+```
+ if(foo == bar){
+  do a thing
+ } 
+ else if(foo == bar2) {
+  do another thing
+ }
+ else {do that other thing}
+```
+
+- use relational and equality operatoirs iwth integer, character or floating points
+- Should not use equality with floating point though as precision can mess with results
+- Strings will cause issues too.
+
