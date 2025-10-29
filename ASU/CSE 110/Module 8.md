@@ -45,3 +45,10 @@ Repetition (loops)
 - Should not use equality with floating point though as precision can mess with results
 - Strings will cause issues too.
 
+## 8.3 multi selection decisions
+if/else if / else if / yada / else
+
+## 8.4 Detecting ranges with branches
+- relational operators are also called comparison operators
+- ALWAYS boolean
+- 
