@@ -21,4 +21,6 @@ Repetition (loops)
 ![[Pasted image 20251029104637.png]]
 
 - in a program a branch is a sequence only executed under certain condition
-- 
+- An if-else can be extended to an if-elseif-else structure. Each branch's expression is checked in sequence; as soon as one branch's expression is found to be true, that branch is taken. If no expression is found true, execution will reach the else branch, which then executes.
+-
+## Detecting equal values with branches
