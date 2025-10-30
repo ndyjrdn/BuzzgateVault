@@ -103,3 +103,14 @@ A switch statement can more clearly represent multi-branch behavior involving 
 - Shorter words come first
 - 
 [[String methods]]
+
+## 8.4 String access operations
+- string are arrays with index starting at 0
+- charAt() returns the char at that index
+- .length returns the length of the string (count of characters starting at 1)
+- .length - 1 returns the last char
+- + concatenates 
+- concat also concatenates
+	- - The + operator can return a new string that appends a string to another string. Ex: If s is "Hey", then ==s + "!!!" returns "Hey!!!"==.
+	- Similarly, s1.concat(s2) returns a new string that appends s2 to s1. If s1 is "Hey", then ==s1.concat("!!!") returns "Hey!!!"==.
+- 
