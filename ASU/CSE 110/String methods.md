@@ -4,12 +4,7 @@
 | substring() | substring(startIndex) returns substring starting at startIndex.  <br>  <br>substring(startIndex, endIndex) returns substring starting at startIndex and ending at endIndex - 1. The length of the substring is given by endIndex - startIndex.                              | // userText is "http://google.com"<br>userText.substring(7)      // Returns "google.com"<br>userText.substring(13)     // Returns ".com"<br>userText.substring(0, 7)   // Returns "http://"<br>userText.substring(13, 17) // Returns ".com"<br><br>// Returns last 4: ".com"<br>userText.substring(userText.length() - 4, userText.length())       |
 ![[Pasted image 20251029185832.png]]
 ![[Pasted image 20251103104149.png]]
-![[Pasted image 20251103104731.png]]
+
 Strings are immutable.  They don't change when operated on. To change a string var you have to assign it a value
 
-## Conditional Expressions
-A conditional expressions is simply an ifelse statement where we write the condition ? expr when true : exprwhen false
-![[Pasted image 20251103133945.png]]
-- Good practice is to restrict usage of conditional expressions to an assignment statement, as in: y = (x == 2) ? 5 : 9 * x;. 
-- Common practice is to put parentheses around the first expression of the conditional expression, to enhance readability.
 

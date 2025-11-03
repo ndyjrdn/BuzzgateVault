@@ -118,3 +118,25 @@ A switch statement can more clearly represent multi-branch behavior involving 
 
 ## 8.16 More String Operations
 [[String methods]]
+
+## 8.17 Conditional Expressions
+A conditional expressions is simply an ifelse statement where we write the condition ? expr when true : exprwhen false
+![[Pasted image 20251103133945.png]]
+- Good practice is to restrict usage of conditional expressions to an assignment statement, as in: y = (x == 2) ? 5 : 9 * x;. 
+- Common practice is to put parentheses around the first expression of the conditional expression, to enhance readability.
+## 8.18 Floating point comparison
+
+==Floating-point numbers should not be compared using. Ex: Avoid float1 == float2. Reason: Some floating-point numbers cannot be exactly represented in the limited available memory bits like 64 bits. Floating-point numbers expected to be equal may be close but not exactly equal.==
+
+- So we compare floats as 'close enough'.
+	- for example:
+```
+	if(Math.abs(nummeters - 0.0) < 0.001){
+	// equals 0
+	}
+	else{
+	//not 0
+	}
+```
+- Diff can be negative but 'close enough' sop absolute val.
+*The difference threshold indicating that floating-point numbers are equal is often called the epsilon. Epsilon's value depends on the program's expected values, but 0.0001 is common.*
