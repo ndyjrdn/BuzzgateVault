@@ -149,4 +149,6 @@ Basically, if you have a conditional (ie x `==`y && a `==`  `b) if x != y then t
 
 ## 8.23 Parameter error checking
 
+## 8.24 using flowcharts to visualize and trace decisions
+
 
