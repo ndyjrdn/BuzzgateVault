@@ -140,3 +140,13 @@ A conditional expressions is simply an ifelse statement where we write the condi
 ```
 - Diff can be negative but 'close enough' sop absolute val.
 *The difference threshold indicating that floating-point numbers are equal is often called the epsilon. Epsilon's value depends on the program's expected values, but 0.0001 is common.*
+
+## 8.19 Short Circuit evaluation
+Basically, if you have a conditional (ie x `==`y && a `==`  `b) if x != y then the whole thing is already false so it skips the second eval.
+
+## 8.20 example
+## 8.22 methods with branches
+
+## 8.23 Parameter error checking
+
+
