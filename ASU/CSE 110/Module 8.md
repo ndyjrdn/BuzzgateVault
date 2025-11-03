@@ -116,3 +116,5 @@ A switch statement can more clearly represent multi-branch behavior involving 
 ## 8.15 Character Operations
 [[Character Methods]]
 
+## 8.16 More String Operations
+[[String methods]]
