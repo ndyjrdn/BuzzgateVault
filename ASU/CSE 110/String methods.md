@@ -6,3 +6,10 @@
 ![[Pasted image 20251103104149.png]]
 ![[Pasted image 20251103104731.png]]
 Strings are immutable.  They don't change when operated on. To change a string var you have to assign it a value
+
+## Conditional Expressions
+A conditional expressions is simply an ifelse statement where we write the condition ? expr when true : exprwhen false
+![[Pasted image 20251103133945.png]]
+- Good practice is to restrict usage of conditional expressions to an assignment statement, as in: y = (x == 2) ? 5 : 9 * x;. 
+- Common practice is to put parentheses around the first expression of the conditional expression, to enhance readability.
+
