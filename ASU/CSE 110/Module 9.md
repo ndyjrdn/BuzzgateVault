@@ -19,3 +19,12 @@
 
 - infinite loops don't have a way to be false.  Either because  the value update is missing or the expression has the opportunity to skip the falsification.
 	- good practice is to include greater than or less than along with equality in a loop expression whenever possible, such as userVal >= 0 rather than userVal != 0.
+## 9.3 more while loop examples
+- when to use:
+	- repetition 
+	- need to return to a previous point
+- counter pattern:
+	- Adding or subtracting the variable as it iterates to reach the falsifying iteration
+- sentinel pattern:
+	- guard condition that prevents or allows the loop (checks for true) each iteration
+- 
