@@ -27,4 +27,4 @@
 	- Adding or subtracting the variable as it iterates to reach the falsifying iteration
 - sentinel pattern:
 	- guard condition that prevents or allows the loop (checks for true) each iteration
-- 
+	- Loops are commonly used to process an input list of values. A sentinel value is a special value indicating the end of a list, such as a list of positive integers ending with 0, as in 10 1 6 3 0. The example below computes the average of an input list of positive integers, ending with 0. The 0 is not included in the average.
