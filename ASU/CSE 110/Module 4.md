@@ -148,5 +148,35 @@ how to program with this (input-process-output) pattern
 		- + if after
 		-  0 if they are the same
 		- 🚩Capitals come before lowercase
-		- 
-	
+		
+## 9.4 For loops
+
+- counter shortcuts
+	- x=x+1
+	- x +=
+	- x++
+	- y = y-1
+	- y =-
+	- y--
+		- i++ increments AFTER the body runs
+		- ++i increments BEFORE the body is run
+
+
+- for loops are counter controlled loops
+	- for: key word
+	- initialization : initialized counter
+	- condition: evaluates T/F
+	- update: updates counter
+	- body:  instructions
+```
+for(initialization; condition; update){
+	body
+}
+
+for(number = 1; number < 4; number++){
+	do stuff
+	// starting with number = 1 until 4 counting by ones  
+}
+```
+![[Pasted image 20251105174051.png]]
+
