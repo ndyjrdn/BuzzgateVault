@@ -187,3 +187,9 @@ for(number = 1; number < 4; number++){
 ## 9.7 Nested loops
 - inner loop is in the body of the outer loop
 - 
+## 9.8 Stacked loops
+## 9.9 Developing programs incrementally
+- Do a little, test and fix, do a little more, test and fix...etc
+## 9.10 Break and continue
+- A break statement in a loop causes an immediate exit of the loop.
+- 
