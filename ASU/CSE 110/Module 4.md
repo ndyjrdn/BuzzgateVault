@@ -182,4 +182,5 @@ for(number = 1; number < 4; number++){
 
 ## 9.5 more loop examples
 - general preference is to start is i=0 and i < N rather than i=1 due to the 0 index array counting in Java and other languages.
-- 
+
+## 9.6 loops and strings
