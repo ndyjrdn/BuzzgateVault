@@ -184,3 +184,6 @@ for(number = 1; number < 4; number++){
 - general preference is to start is i=0 and i < N rather than i=1 due to the 0 index array counting in Java and other languages.
 
 ## 9.6 loops and strings
+## 9.7 Nested loops
+- inner loop is in the body of the outer loop
+- 
