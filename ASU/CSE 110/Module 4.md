@@ -192,4 +192,5 @@ for(number = 1; number < 4; number++){
 - Do a little, test and fix, do a little more, test and fix...etc
 ## 9.10 Break and continue
 - A break statement in a loop causes an immediate exit of the loop.
+- A continue statement initiates a jump to the condition check
 - 
