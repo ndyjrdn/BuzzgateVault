@@ -193,4 +193,27 @@ for(number = 1; number < 4; number++){
 ## 9.10 Break and continue
 - A break statement in a loop causes an immediate exit of the loop.
 - A continue statement initiates a jump to the condition check
-- 
+
+## 9.11 Variable name scope
+- A variable is only valid in it's scope.  the scope applies to the block in which it was declared.  
+- A block is a brace enclosed sequesnce of statements {}
+- A common error is to declare a variable inside a loop whose value should persist across iterations.
+
+## 9.12 Enumerations
+- ==an enumeration type (enum) declares a name for a type and possible values for that type==
+```
+public enum identifier{enumerator1, enumerator2, ...}
+```
+			- Items in the {} are named constants
+			- they are NOT assigned a numeric values
+			- referenced by defined names
+			- Can be used like other data types
+- A state machine is used in programs where the program changes 'state' of a thing based on conditions.
+	- Basically an if/else ladder to determine the state.
+	- Works in here as you can enumerate a variable (lightsaber) and assign it different colors based on criteria.  The state machine is the algorithm that updates the state based on the conditions.
+		- A programmer must include both the enumeration type and the enumerator within that type, as in 
+		- `lightVal = LightState.RED;`
+		- A common error is to omit the enumeration type in an expression. For example, the statement 
+		- `lightVal = RED;`   results in a compilation error.==
+	==One might ask why the light variable wasn't simply declared as a string, and then compared with strings "GREEN", "RED", and "YELLOW". Enumerations are safer. If using a string, an assignment like `light = "ORANGE"` would not yield a compiler error, even though ORANGE is not a valid light color. Likewise, `light == "YELOW"` would not yield a compiler error, even though YELLOW is misspelled.==
+	
