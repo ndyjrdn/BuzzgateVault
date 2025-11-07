@@ -218,3 +218,6 @@ public enum identifier{enumerator1, enumerator2, ...}
 	==One might ask why the light variable wasn't simply declared as a string, and then compared with strings "GREEN", "RED", and "YELLOW". Enumerations are safer. If using a string, an assignment like `light = "ORANGE"` would not yield a compiler error, even though ORANGE is not a valid light color. Likewise, `light == "YELOW"` would not yield a compiler error, even though YELLOW is misspelled.==
 
 ## 9.13 example
+## 9.14 example
+
+## 9.15 Methods with loops
