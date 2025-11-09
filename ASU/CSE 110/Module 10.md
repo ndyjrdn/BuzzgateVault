@@ -36,4 +36,14 @@ System.out.println("Enter " + NUM_ELEMENTS + " integer values...");
 - Can be initiated at creation 
 	- int[] myAray={5,7,9};
 		- Creates an array of 3 ints with those number
-	- 
+
+## 10.3 Array iteration drill
+## 10.4 iterating through arrays
+### Common loop structure:
+```
+// Iterating through myArray
+for (i = 0; i < myArray.length; ++i) {
+   // Loop body accessing myArray[i]
+}
+```
+
