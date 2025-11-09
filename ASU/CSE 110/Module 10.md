@@ -47,3 +47,5 @@ for (i = 0; i < myArray.length; ++i) {
 }
 ```
 
+## 10.5 multiple arrays
+
