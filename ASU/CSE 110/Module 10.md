@@ -18,4 +18,22 @@
 -  You can declare an array (int[] gamesScores;) and then allocate it later (gameScores = new int[4];) 
 	- Good practice is to do both at the same time IF the size in know 
 
-- The accessing index is an expression but is also always an integer.  
+- The accessing index is an expression but is also always an integer.  The means you can have calculation in the index (ie oldestPerson = [nthPerson-1])
+
+### loops and arrays
+- Can store user input in an array looping over nextInt()
+```
+System.out.println("Enter " + NUM_ELEMENTS + " integer values...");
+      for (i = 0; i < userVals.length; ++i) {
+         userVals[i] = scnr.nextInt();
+         System.out.println("Value: " + userVals[i]);
+      }
+```
+- .length returns the number of elements userVals.length
+- 
+### initialization
+- default initialization for ints and floating point arrays is 0 for each element,   booleans defauls to Fales
+- Can be initiated at creation 
+	- int[] myAray={5,7,9};
+		- Creates an array of 3 ints with those number
+	- 
