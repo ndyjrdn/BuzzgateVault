@@ -55,3 +55,17 @@ for (i = 0; i < myArray.length; ++i) {
 
 ## 10.8 debugging example
 ## 10.9 2 dimensional arrays
+ ==notes for tests:  instantiation of variables and arrays
+ This chapter video starts with a good array reveiw==
+ declaring a 2d array
+ ![[Pasted image 20251110120046.png]]
+ ![[Pasted image 20251110120129.png]]
+ ![[Pasted image 20251110115934.png]]
+ ![[Pasted image 20251110120446.png]]
+ - the .length of a 2d array is the number of rows 
+ - the data[row].length gives the number of columns
+ - 
+ 
+
+
+
