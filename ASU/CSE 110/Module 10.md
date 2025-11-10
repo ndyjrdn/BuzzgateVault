@@ -48,4 +48,7 @@ for (i = 0; i < myArray.length; ++i) {
 ```
 
 ## 10.5 multiple arrays
+## 10.6 Swapping 2 variables
+- use temp variable to hold one val while assigning to the other then assign the temp value the other array
 
+## 10.7 Using a loop to modify or copy an array
