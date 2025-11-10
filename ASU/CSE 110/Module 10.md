@@ -65,7 +65,61 @@ for (i = 0; i < myArray.length; ++i) {
  - the .length of a 2d array is the number of rows 
  - the data[row].length gives the number of columns
  - 
- 
+ ```Syntax example
+ import java.util.Scanner;
 
+public class ArraysKeyValue {
+   public static void main (String [] args) {
+      Scanner scnr = new Scanner(System.in);
+      final int NUM_ROWS = 2;
+      final int NUM_COLS = 2;
+      int [][] milesTracker = new int[NUM_ROWS][NUM_COLS];
+      int i;
+      int j;
+      int maxMiles;
+      int minMiles;
 
+      for (i = 0; i < milesTracker.length; i++){
+         for (j = 0; j < milesTracker[i].length; j++){
+            milesTracker[i][j] = scnr.nextInt();
+         }
+      }
 
+      maxMiles = milesTracker[0][0];
+      minMiles = milesTracker[0][0];
+//look here
+********************************************
+*********************************************
+       for (i = 0; i < milesTracker.length; i++) {
+         for (j = 0; j < milesTracker[i].length; j++) {
+            if(milesTracker[i][j] > maxMiles){
+               maxMiles = milesTracker[i][j];
+            }
+            if(milesTracker[i][j] < minMiles){
+               minMiles = milesTracker[i][j];
+            }
+         }
+       }
+  **********************************************
+  **********************************************     
+
+      System.out.println("Min miles: " + minMiles);
+      System.out.println("Max miles: " + maxMiles);
+   }
+}
+ ```
+
+## Enhanced for loop arrays
+- aka for each loop
+- declares a loop variable with scope limited to the loop.
+- loop var is assigned after each element is visited
+- only for loops that run 0 - array.length
+![[Pasted image 20251110145948.png]]
+See above ☝️  
+
+- decreased the amount of code needed to iterate an array enhncing readability and intention
+- You can't use the loop variable to update the value in the array
+-
+## 10.11 example
+## 10.12 example
+## 10.13 Array parameters
