@@ -139,3 +139,22 @@ See above ☝️
 	 - This is about creating arrays in methods.   If an array is created from a method AND the size is not provided.  it's a perfect array meaning that the returned array will have the number of elements that are available in the method.  no more or less.
 
 ## 10.15 array algo example
+Good algorithm examples.  
+- [[print array]]
+- [[print sum]]
+- [[return sum]]
+- [[return average]]
+- [[return max]]
+- [[return min]]
+- [[find first]]
+- [[find last]]
+- [[swap by index]]
+- [[bubble sort]]
+
+## 10.16 oversize arrays
+- An oversize array is an array where the number of elements used is less than or equal to the memory allocated. Since the number of elements used in an oversize array is usually less than the array's length, a separate integer variable is used to keep track of how many array elements are currently used.
+
+## 10.17 methods with oversized arrays
+- If the array size is changed by a method, then the new array size needs to be returned by the method.
+- 
+
