@@ -123,10 +123,19 @@ See above ☝️
 ## 10.11 example
 ## 10.12 example
 ## 10.13 Array parameters
-### this is a worked example.  Good examples of many concepts here for reveiw.
-[[Code Example 1]]
+# ==this is a worked example.  Good examples of many concepts here for review.==
+
+[[Code Example 1]]  
 
 - An array is passed to a method by passing a reference to the array. The array reference is copied to the method's parameter, so a method can modify the elements of an array argument.
 - ==A common error is to assign a method's array (or object) parameter believing that assignment will update the array argument.==
 - 
 ![[Pasted image 20251110153849.png]]
+
+## 10.14 perfect size arrays
+- Because the names of the days of the week are also unlikely to change, the array should be constant. Ex: `final String[] daysOfWeek = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};` An array that contains the list of cities where a company has locations would not be perfect size because companies can both add and subtract locations over time.
+
+ - Takes a minute to get my head around.  
+	 - This is about creating arrays in methods.   If an array is created from a method AND the size is not provided.  it's a perfect array meaning that the returned array will have the number of elements that are available in the method.  no more or less.
+
+## 10.15 array algo example
