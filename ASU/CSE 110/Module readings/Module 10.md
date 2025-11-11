@@ -209,6 +209,13 @@ Disadvantage: if the number of array elements needs to change, a new array will 
 - [[binary search]]
 - Maximum number of steps is [log<sub>2</sub> N] +1
 
+## 10.24 Sorting intro
+- Sorting is the process of converting a list of elements into ascending (or descending) order.
+## 10.25 Selection sort
+- Selection sort is a sorting algorithm that treats the input as two parts, a sorted part and an unsorted part, and 
+- repeatedly selects the proper next value to move from the unsorted part to the end of the sorted part.
+- [[selection sort]]
+runtime O(N)^2
 
 
 
