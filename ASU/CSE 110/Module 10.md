@@ -190,4 +190,16 @@ Disadvantage: if the number of array elements needs to change, a new array will 
 	2. Changes an array's contents, but not the array's size. If a method changes the array's contents, the method usually has a void return type. Ex: The Arrays class' method `void sort(int[] arrayReference)` changes the array contents to be in ascending order.
 	3. Creates a new array or changes the array's size (and possibly contents). Since array references cannot be changed inside a method, a method that returns a newly constructed array must return an array reference. Ex: The Arrays class' method `double[] copyOf(double[] arrayReference, int newLength)` creates a copy of the arrayReference with the length newLength.
 	4. ![[Pasted image 20251110190447.png]]
-	5. 
+- 
+- 
+- An error that unintentionally modifies data is known as a side effect
+	- A common side effect is a method that calculates values based on an array, but unintentionally modifies the array. Methods should perform exactly one task. A method can calculate something or change the array contents, but should not do both
+	- -Use a different algorithm that does not require sorting the array.
+	- Make a copy of the array and perform the calculation using the copy.
+
+## 10.22 searching and algorithms
+- Linear search is a search algorithm that starts from the beginning of a list, and checks each element until the search key is found or the end of the list is reached.
+- An algorithm's **runtime** is the time the algorithm takes to execute.
+	- ==If each comparison takes 1 µs (1 microsecond), a linear search algorithm's runtime is up to 1 s to search a list with 1,000,000 elements, 10 s for 10,000,000 elements, and so on. Ex: Searching Amazon's online store, which has more than 200 million items, could require more than 3 minutes.==
+	
+## 10.23 Binary search
