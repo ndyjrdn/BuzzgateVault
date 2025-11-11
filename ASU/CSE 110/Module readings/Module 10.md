@@ -203,3 +203,16 @@ Disadvantage: if the number of array elements needs to change, a new array will 
 	- ==If each comparison takes 1 µs (1 microsecond), a linear search algorithm's runtime is up to 1 s to search a list with 1,000,000 elements, 10 s for 10,000,000 elements, and so on. Ex: Searching Amazon's online store, which has more than 200 million items, could require more than 3 minutes.==
 	
 ## 10.23 Binary search
+- for sorted lists.  
+-  checks middle element cutting the search list in half, then the middle of the half etc
+- **Binary search is a faster algorithm for searching a list if the list's elements are sorted and directly accessible (such as an array)**.
+- [[binary search]]
+- Maximum number of steps is [log<sub>2</sub> N] +1
+
+
+
+
+
+
+
+
