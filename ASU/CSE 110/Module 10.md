@@ -156,5 +156,22 @@ Good algorithm examples.
 
 ## 10.17 methods with oversized arrays
 - If the array size is changed by a method, then the new array size needs to be returned by the method.
-- 
+- A common error is to not return the new size of an oversize array that was modified in a method.
 
+## 10.18 comparing perfect and oversized arrays
+- A method signature can tell a programmer whether a perfect size or oversize array is expected as an argument.
+
+	- A method that expects a perfect size array as an argument will have one parameter for the array reference, but no parameter for the array size. Ex: `int findIndexMax(String[] arrayReference)` expects a perfect size array.
+	- A method that expects an oversize array as an argument will have two parameters to pass the array: one for the array reference and one for the array size. Ex: `int binarySearch(String[] arrayReference, int arraySize, String searchKey)` expects an oversize array.
+- The return type can also help a programmer determine whether a method uses a perfect size or an oversize array.
+
+	- If a method returns an array reference, the method constructs a perfect size array. An oversize array cannot be constructed inside a method because the method would need to return both an array reference and array size, which is not permitted in Java.
+	- If a method returns an int, the method may use an oversize array, where the return value indicates the new array size. Ex: `int removeAll(String[] arrayReference, int arraySize, String target)` removes all of the occurrences of target from an oversize array. Because the method has an arraySize parameter and returns an int, a programmer can determine that the method uses an oversize array.
+![[Pasted image 20251110180511.png]]
+### advantages of perfect sized arrays
+- methods that use perfect size arrays have fewer parameters than methods that use oversize arrays.
+- a perfect size array contains no excess elements
+Disadvantage: if the number of array elements needs to change, a new array will have to be constructed.
+
+## 10.19 using references in methods
+==Arrays can be used in methods just like int and double values. However, an array is stored in memory differently than variables of primitive data types, like int or double. An int and double variable is stored directly in the stack frame. An array is stored indirectly in the heap, and only the reference to the array is stored in the stack frame. This subtle difference in storage means that arrays behave differently in methods than int and double variables.==
