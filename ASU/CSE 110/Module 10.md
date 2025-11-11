@@ -175,3 +175,19 @@ Disadvantage: if the number of array elements needs to change, a new array will 
 
 ## 10.19 using references in methods
 ==Arrays can be used in methods just like int and double values. However, an array is stored in memory differently than variables of primitive data types, like int or double. An int and double variable is stored directly in the stack frame. An array is stored indirectly in the heap, and only the reference to the array is stored in the stack frame. This subtle difference in storage means that arrays behave differently in methods than int and double variables.==
+- common error: trying to modify an array reference in a method.
+
+## 10.20 returning arrays from methods
+- Methods often need to modify an array's size, but an array's length cannot be modified. Instead a new array with the modified size must be constructed.
+	- If a method needs to modify an array's size
+		- the method must construct a new array with the new size,
+		- copy the existing array's elements to the new array
+		- The original array reference must be assigned with the reference to the new array returned by the method
+
+## 10.21 Common errors
+- Errors made in method signatures are hard to find because programmers forget to look for those errors
+	1.  Calculates a value based on the array, leave the array unchanged. If a method does not change the array contents, then the method must be calculating some other value that must be returned. Ex: The Arrays class' method `int binarySearch(int[] arrayReference, int target)` determines whether target exists in the array data. The returned value is the index of target in the array, or a negative number if target is not in the array.
+	2. Changes an array's contents, but not the array's size. If a method changes the array's contents, the method usually has a void return type. Ex: The Arrays class' method `void sort(int[] arrayReference)` changes the array contents to be in ascending order.
+	3. Creates a new array or changes the array's size (and possibly contents). Since array references cannot be changed inside a method, a method that returns a newly constructed array must return an array reference. Ex: The Arrays class' method `double[] copyOf(double[] arrayReference, int newLength)` creates a copy of the arrayReference with the length newLength.
+	4. ![[Pasted image 20251110190447.png]]
+	5. 
