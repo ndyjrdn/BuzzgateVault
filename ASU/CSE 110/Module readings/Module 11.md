@@ -50,5 +50,10 @@ Java variables are one of two types.
 ## 11.6 ArrayList
 - ArrayList works like a resizable array
 - An ArrayList is an ordered list of reference type items that comes with Java. Each item in an ArrayList is known as an element. The statement `import java.util.ArrayList;` enables use of an ArrayList.
-The declaration ==`ArrayList<Integer> vals = new ArrayList<Integer>()`== creates reference variable vals that refers to a new ArrayList object consisting of Integer objects
-
+- The declaration ==`ArrayList<Integer> vals = new ArrayList<Integer>()`== creates reference variable vals that refers to a new ArrayList object consisting of Integer objects
+- ArrayList does NOT support primitive types
+- ![[Pasted image 20251112102615.png]]
+- ![[Pasted image 20251112102638.png]]
+- 0 based index like an array
+- ==An ArrayList is one of several Collections supported by Java for keeping groups of items. Other collections include _LinkedList_, _Set_, _Queue_, _Map_, and many more. A programmer selects the collection whose features best suit the desired task. For example, an ArrayList can efficiently access elements at any valid index but inserts are expensive, whereas a LinkedList supports efficient inserts but access requires iterating through elements. So a program that will do many accesses and few inserts might use an ArrayList.==
+- 
