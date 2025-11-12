@@ -56,4 +56,23 @@ Java variables are one of two types.
 - ![[Pasted image 20251112102638.png]]
 - 0 based index like an array
 - ==An ArrayList is one of several Collections supported by Java for keeping groups of items. Other collections include _LinkedList_, _Set_, _Queue_, _Map_, and many more. A programmer selects the collection whose features best suit the desired task. For example, an ArrayList can efficiently access elements at any valid index but inserts are expensive, whereas a LinkedList supports efficient inserts but access requires iterating through elements. So a program that will do many accesses and few inserts might use an ArrayList.==
-- 
+
+## 11.7 How do we declare and create ArrayList
+```
+import java.util.ArrayList;
+```
+ArrayList is a **generic type**
+
+- An ArrayList, like an array, is a kind of container for other types. 
+- IE An array of integers (int[ ]) is a container for int values
+- it is not specialized to store values of any specific type
+
+```
+ArrayList<String> names = new ArrayList<String>();
+```
+
+## 11.8 How to access ArrayList Elements
+-  Use the add method To add an element to an ArrayList.
+- Use the get method To retrieve an element from an ArrayList.
+
+
