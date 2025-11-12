@@ -30,4 +30,13 @@ Java variables are one of two types.
 - Wrapper classes ^^ can be used in expressions just like primitives
 - **Wrapper classes are immutable**
 	- a programmer cannot change the object via methods or variable assignments after object creation.
+- Wrapper classes have the same size limits as primitives
+- comparing  reference variables with == or != compares whether they refer to the same object, not whether the values are the same.
+	- think of String.   String == String doesn't work. String.equals(String) ;)
+- ![[Pasted image 20251112100157.png]]
+- Reference variables of wrapper classes can also be compared using the equals() and compareTo() methods. These method descriptions are presented for the Integer class, but apply equally well to the other wrapper classes. ==Although the use of comparison methods is slightly cumbersome in comparison to relational operators, these comparison methods may be preferred by programmers who do not wish to memorize exactly which comparison operators work as expected.==
+
+## 11.5 Wrapper class conversions
+- Autoboxing is the automatic conversion of prim to wrapper
+- Unboxing is automatic convertion from wrapper to prim
 - 
