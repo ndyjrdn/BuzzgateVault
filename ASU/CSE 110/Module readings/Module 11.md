@@ -152,3 +152,63 @@ A common use of string streams is to process user input line-by-line. The follow
 open file with FileInputStream
 read file with Scanner
 do stuff with the scanner object (next, nextInt etc)
+close file with file object .close()
+
+## 12.4 reading input.  Good review of previous sections:
+```
+import java.util.Scanner;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class Main {
+  public static void main(String[] args) throws IOException {
+    FileInputStream myFile = new FileInputStream("mydata.txt");
+    Scanner myFileReader = new Scanner(myFile);
+
+    while(myFileReader.hasNextLine()) {
+        String line = myFileReader.nextLine();
+        System.out.println(line);
+    }
+  }
+}
+```
+
+Let's take a closer look at this program.
+
+```
+import java.io.FileInputStream;
+import java.io.IOException;
+```
+
+These statements import some features of the Java standard library that we will need to do file input and output (I/O).  
+
+```
+main(String[] args) throws IOException {
+```
+
+We must add this throws IOException bit of code to the header of our main method. Java requires us to explicitly state that a method may throw an exception, but don't worry too much about this right now, just know that whenever we read or write to files, unexpected errors (Exceptions) may occur.
+
+  ```
+  FileInputStream myFile = new FileInputStream("mydata.txt");
+  ```
+
+This code (above) declares a variable named myFile, of type FileInputStream, and instantiates (creates) a new FileInputStream object that is associated with the file named mydata.txt. When the program executes, it will look in the same folder (or directory) as the executable for the file named mydata.txt, unless a complete path (something like "C:/Users/bsmith/mydata.txt") is provided.
+```
+Scanner myFileReader = new Scanner(myFile);
+```
+
+This line above, declares a variable and creates a new Scanner object attached to our FileInputStream object. 
+
+```
+while(myFileReader.hasNextLine()) {
+```
+
+The hasNextLine method checks to see if there is more data (another line) to read from the file, before we try to read it.  If there is more data, the hasNextLine method will return true, otherwise it will return false. If the program has reached the end of the file and we try to read data that doesn't exist, the program will crash by throwing an exception. The condition of the loop will cause the loop body to execute again and again until we have read all the data (lines) in the file.
+
+The Scanner behaves the same when attached to a file as it behaves when attached to System.in (the keyboard by default) - except the data is coming from a file instead of the keyboard. We can use all of the usual Scanner methods (like next(), nextInt(), nextDouble(), etc.) to read different types of data from the file.
+
+## 12.5 File output
+- A FileOutputStream is a class that supports writing to a file. 
+- The FileOutputStream class inherits from OutputStream.
+- ![[Pasted image 20251112130056.png]]
+- 
