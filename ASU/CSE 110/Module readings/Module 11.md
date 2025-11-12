@@ -133,4 +133,15 @@ Use Arrays when you know the number of elements needed to perform certain tasks,
 - System.in is a predefined InputStream object that is associated with a system's standard input, usually a keyboard.
 - ==When using an InputStream, a programmer must append the clause `throws IOException` to the definition of main(), as shown in the animation below. A throws clause indicates that during runtime the corresponding method may exit unexpectedly due to an exception. Ex: An exception would be thrown if a program tries to read a byte, but there was a communication error with the keyboard.==
 	- ![[Pasted image 20251112115256.png]]
-	- 
+### 
+## 12.2 Streams using strings
+==A programmer can read data from a string instead of from the keyboard (standard input) by associating a Scanner object with a String. A Scanner object initialized from a String is often referred to as an input string stream.==
+
+![[Pasted image 20251112115913.png]]
+
+### Line-by-line input processing
+A common use of string streams is to process user input line-by-line. The following program uses scnr.nextLine() to read an input line from standard input and copy the line into a String. The statement inSS = new Scanner(lineString); creates a Scanner object using the String lineString. Afterwards, the program extracts input from the inSS stream using the next() and nextInt() methods.
+![[Pasted image 20251112120109.png]]
+
+- An output string stream is a stream that can write to a String instead of to standard output. An output string stream allows a programmer to build and format a String before outputting to a file or the screen.
+- An output string stream is created using both the StringWriter and PrintWriter classes, which are available by including: `import java.io.StringWriter;` and `import java.io.PrintWriter;`. The StringWriter class provides a character stream to output characters. The PrintWriter class augments character streams, such as StringWriter, with print() and println() methods to output various data types, like int, double, and String, in a manner similar to System.out.
