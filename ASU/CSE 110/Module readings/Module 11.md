@@ -39,4 +39,16 @@ Java variables are one of two types.
 ## 11.5 Wrapper class conversions
 - Autoboxing is the automatic conversion of prim to wrapper
 - Unboxing is automatic convertion from wrapper to prim
-- 
+### Converting wrapper class opbects to primitive types
+![[Pasted image 20251112101031.png]]
+	The Character and Boolean classes support the charValue() and booleanValue() methods, respectively, which perform similar functions.
+	==Several of these methods are static methods, meaning they can be called by a program without creating an object. To call a static method, the name of the class and a '.' must precede the static method name, as in `Integer.toString(16);`. ==
+	
+![[Pasted image 20251112101815.png]]
+
+
+## 11.6 ArrayList
+- ArrayList works like a resizable array
+- An ArrayList is an ordered list of reference type items that comes with Java. Each item in an ArrayList is known as an element. The statement `import java.util.ArrayList;` enables use of an ArrayList.
+The declaration ==`ArrayList<Integer> vals = new ArrayList<Integer>()`== creates reference variable vals that refers to a new ArrayList object consisting of Integer objects
+
