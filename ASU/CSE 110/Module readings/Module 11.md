@@ -211,4 +211,49 @@ The Scanner behaves the same when attached to a file as it behaves when attache
 - A FileOutputStream is a class that supports writing to a file. 
 - The FileOutputStream class inherits from OutputStream.
 - ![[Pasted image 20251112130056.png]]
-- 
+## 12.6 Write the output file
+```
+import java.io.FileOutputStream;
+import java.io.PrintWriter ;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+      FileOutputStream myFile = new FileOutputStream("output_data.txt");
+    	PrintWriter myFileWriter = new PrintWriter(myFile);
+        
+      myFileWriter.println("Hello, this is my file output.");
+      myFileWriter.println("Here is a computer haiku:");
+      myFileWriter.println("\tYesterday it worked.");
+		  myFileWriter.println("\tToday it is not working.");
+		  myFileWriter.println("\tWindows is like that.");
+      myFileWriter.println("Haiku have " + 3 + " lines.");
+      myFileWriter.close();
+      System.out.println("Output complete!");
+    }
+}
+```
+### Let's take a closer look at this program.
+```
+import java.io.FileOutputStream;
+import java.io.PrintWriter;
+import java.io.IOException;
+```
+These statements import some features of the Java standard library that we will need in order to do file input and output (I/O)
+
+```
+FileOutputStream myFile = new FileOutputStream("output_data.txt");
+PrintWriter myFileWriter= new PrintWriter(myFile);
+```
+These statements create a new file called output_data.txt - This will create a new file if it does not already exist, and it will overwrite (replace) any file that already exists with the same name. Next, we attach a PrintWriter to the file. The PrintWriter allows us to write data to the file as simple strings, just like using the System.out.print() or System.out.println() methods allow us to write strings to the console window. The file named outputData.txt can be any string representing a filename or path. If only the filename is given, the file will be created in the same folder as the executable. If you want to create a file in a different folder, your program must include the full path in the string.
+
+```
+myFileWriter.println("Hello, this is my file output.");
+```
+  
+
+We can use the print or println methods of the PrintWriter to write a string (or other data) to the file.
+```
+myFileWriter.close();
+```
+This line saves and closes the file we've created. This method should always be called when we are finished writing to a file.
