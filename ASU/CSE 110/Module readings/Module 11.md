@@ -87,3 +87,50 @@ ArrayList<String> names = new ArrayList<String>();
 - Can be passed to a method
 ![[Pasted image 20251112113722.png]]
 
+## 11.11 Arrays and arraylists
+	“Code is like humor, when you have to explain it, it’s bad” - Cory House
+
+### Array examples
+```
+// <data type>[] <Array name> = new <data type>[<size of Array>];
+
+// Example 1D Array:
+int[] arr = new int[5];      // here we have 5 elements
+
+// Example 2D Array:
+int[][] arr2 = new int[5][2] // here we have 5 rows and 2 columns
+```
+
+### Arraylist examples
+```
+import java.util.ArrayList;
+...
+
+// ArrayList<Reference Type> myArr = new ArrayList<>();
+
+// Example of creating/instantiating an ArrayList of type Integer:
+ArrayList<Integer> myList1 = new ArrayList<>();
+
+// Example of creating/instantiating  an ArrayList with some initial elements:
+ArrayList<Integer> myList2 = new ArrayList(Arrays.asList(1,2,3,4,5));
+
+// Example of creating/instantiating  an ArrayList of some custom class type:
+// Lets' say we have a class called Employee
+ArrayList<Employee> myList3 = new ArrayList<>();
+// This means that each of the element in myList3 will be an object of class Employee
+```
+
+#### When to use Array and ArrayList?
+
+Use Arrays when you know the number of elements needed to perform certain tasks, and the number of element will not change while the program is running. The ArrayList is used for the cases when you don’t know how many elements you may end up adding to the data structure in advance.
+
+## 12.1 Output and input streams
+### PrintStream and System.out
+
+- Programs need a way to output data to a screen, a file, or elsewhere. The PrintStream class provides several methods for writing data to output. Internally, a PrintStream normally places data into a temporary storage memory region, known as a buffer, and the system then outputs the buffer at various times.
+- System.out is a predefined PrintStream object that is associated with a system's standard output, usually a computer screen.
+- The InputStream class provides several read() methods for extracting bytes of data from an input source.
+- System.in is a predefined InputStream object that is associated with a system's standard input, usually a keyboard.
+- ==When using an InputStream, a programmer must append the clause `throws IOException` to the definition of main(), as shown in the animation below. A throws clause indicates that during runtime the corresponding method may exit unexpectedly due to an exception. Ex: An exception would be thrown if a program tries to read a byte, but there was a communication error with the keyboard.==
+	- ![[Pasted image 20251112115256.png]]
+	- 
