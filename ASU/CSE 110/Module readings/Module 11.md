@@ -74,5 +74,16 @@ ArrayList<String> names = new ArrayList<String>();
 ## 11.8 How to access ArrayList Elements
 -  Use the add method To add an element to an ArrayList.
 - Use the get method To retrieve an element from an ArrayList.
+- There is also a set method that will allow you to store a new element at a specified index in the ArrayList.
+-[[ArrayList Methods]]
 
+
+## 11.9 inserting and removing ArrayList elements
+- Use the remove method To remove an element from an ArrayList.
+	- the remove method automatically moves all the elements beyond the removal index to the next lower index
+
+## 11.10 ArrayList Video
+- can use enhanced for loops 
+- Can be passed to a method
+![[Pasted image 20251112113722.png]]
 
