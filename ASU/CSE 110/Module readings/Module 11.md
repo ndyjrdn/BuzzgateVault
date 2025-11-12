@@ -147,3 +147,5 @@ A common use of string streams is to process user input line-by-line. The follow
 - An output string stream is created using both the StringWriter and PrintWriter classes, which are available by including: `import java.io.StringWriter;` and `import java.io.PrintWriter;`. The StringWriter class provides a character stream to output characters. The PrintWriter class augments character streams, such as StringWriter, with print() and println() methods to output various data types, like int, double, and String, in a manner similar to System.out.
 
 ## 12.3 File input
+- To read file input, a programmer can create a new input stream that comes from a file, rather than the predefined input stream System.in that comes from the standard input (keyboard). An input stream can then be used just like the familiar Scanner and System.in combination.
+- The statement `fileByteStream = new FileInputStream(str);` creates a file input stream and opens the file denoted by a String variable, str, for reading. FileInputStream's constructor also allows a programmer to pass the filename as a String literal. Ex: `fileByteStream = new FileInputStream("numFile.txt");`
