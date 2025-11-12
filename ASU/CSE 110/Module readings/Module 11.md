@@ -149,3 +149,6 @@ A common use of string streams is to process user input line-by-line. The follow
 ## 12.3 File input
 - To read file input, a programmer can create a new input stream that comes from a file, rather than the predefined input stream System.in that comes from the standard input (keyboard). An input stream can then be used just like the familiar Scanner and System.in combination.
 - The statement `fileByteStream = new FileInputStream(str);` creates a file input stream and opens the file denoted by a String variable, str, for reading. FileInputStream's constructor also allows a programmer to pass the filename as a String literal. Ex: `fileByteStream = new FileInputStream("numFile.txt");`
+open file with FileInputStream
+read file with Scanner
+do stuff with the scanner object (next, nextInt etc)
