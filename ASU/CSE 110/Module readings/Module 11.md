@@ -145,3 +145,5 @@ A common use of string streams is to process user input line-by-line. The follow
 
 - An output string stream is a stream that can write to a String instead of to standard output. An output string stream allows a programmer to build and format a String before outputting to a file or the screen.
 - An output string stream is created using both the StringWriter and PrintWriter classes, which are available by including: `import java.io.StringWriter;` and `import java.io.PrintWriter;`. The StringWriter class provides a character stream to output characters. The PrintWriter class augments character streams, such as StringWriter, with print() and println() methods to output various data types, like int, double, and String, in a manner similar to System.out.
+
+## 12.3 File input
