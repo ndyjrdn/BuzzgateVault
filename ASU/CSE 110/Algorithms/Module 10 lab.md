@@ -533,5 +533,96 @@ myFileReader.close();
 
 ## p 12
 ```java
+// This program will read the contents of an input file (line by line);
+// each line of the input file will have one integer value between 1 and 100.
+// From the data in the input file, you must compute the
+// sum, average, minimum, and maximum values.
+// These values must then be printed to the console (terminal).
+// You must fill in the missing piece described in the code below.
+// 1) you must write the reportStatistics method.
+// make no other changes to the code,
+// and make no changes to any of the provided .dat files.
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.PrintWriter ;
+import java.io.IOException;
+import java.util.Scanner;
+
+class Main {
+static Scanner scnr = new Scanner(System.in);
+// make no changes to this method
+public static void main(String[] args) throws IOException {
+String inputFileName = getFileName("Enter input file name : ");
+reportStatistics(inputFileName);
+}
+// make no changes to this method
+public static String getFileName(String prompt) {
+System.out.print(prompt);
+return scnr.nextLine();
+}
+
+/* 1) Write a public static method named reportStatistics.
+Be sure to add the 'throws IOException' clause to the method header
+This method should take one String argument (an input file name).
+This method should have a return type of void.
+This method should read in all of the integers from the input file.
+This method should compute the sum (int), average (float), min (int) and max (int) values.
+from the data in the input file.
+This method should output these statistics to the console (terminal).
+The output should look like this (average should have two digits to the right of the decimal point):
+Sum is : 45
+Average is : 5.00
+Min is : 1
+Max is : 9
+
+*/
+
+public static void reportStatistics(String inputFileName)throws IOException{
+
+Scanner myFileReader = new Scanner(new FileInputStream(inputFileName));
+int sum = 0;
+int count = 0;
+int min = 0;
+int max = 0;
+int currVal = 0;
+while(myFileReader.hasNextInt()){
+currVal = myFileReader.nextInt();
+sum += currVal;
+count ++;
+if(min == 0 || currVal < min){
+min = currVal;
+}
+if(currVal > max){
+max = currVal;
+}
+} 
+
+double avg = sum / count;
+
+System.out.println("Sum is : " + sum);
+System.out.printf("Average is : %.2f\n", avg);
+System.out.println("Min is : " + min);
+System.out.println("Max is : " + max);
+
+}
+
+// make no changes to this method
+
+public static void printFile(String fileName) throws IOException {
+
+Scanner myFileReader = new Scanner(new FileInputStream(fileName));
+
+while (myFileReader.hasNextLine()) {
+
+System.out.println(myFileReader.nextLine());
+}
+myFileReader.close();
+}
+}
+```
+
+## P 13
+```Java
 
 ```
