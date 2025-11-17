@@ -1,4 +1,4 @@
-```
+```java
 import java.io.IOException;
 import java.io.FileInputStream;
 import java.util.ArrayList;
@@ -135,7 +135,7 @@ myfile.close();
 ```
 
 ## individual Ex p1
-```
+```java
 import java.util.ArrayList;
 public class Main {
 public static void main(String[] args) {
@@ -162,7 +162,7 @@ System.out.print(arr.get(i));
 }
 ```
 ## p2
-```
+```java
 import java.util.ArrayList;
 public class Main {
 public static void main(String[] args) {
@@ -192,7 +192,7 @@ return count;
 ```
 
 ## p3
-```
+```java
 import java.util.ArrayList;
 public class Main {
 public static void main(String[] args) {
@@ -221,7 +221,7 @@ return(count);
 ```
 
 ## P4
-```
+```java
 import java.util.ArrayList;
 public class Main {
 public static void main(String[] args) {
@@ -247,7 +247,82 @@ return newArr;
 }
 ```
 
-## p5
+## p5 remove duplicates
+```java
+import java.util.ArrayList;
+
+public class Main {
+public static void main(String[] args) {
+ArrayList<Integer> arr = new ArrayList<Integer>();
+arr.add(1);
+arr.add(1);
+arr.add(2);
+arr.add(2);
+arr.add(3);
+arr.add(3);
+arr.add(4);
+System.out.print(noDuplicates(arr));
+}
+
+public static boolean contains(ArrayList<Integer> list, int num){
+for(int i : list){
+if(i == num){
+return true;
+}
+}
+return false;
+}
+
+public static ArrayList<Integer> noDuplicates(ArrayList<Integer> list){
+ArrayList<Integer> result = new ArrayList<Integer>();
+for(int i : list){
+if(!contains(result, i)){
+result.add(i);
+}
+}
+return(result);
+}
+}
 ```
+
+## p6
+``` java
+import java.util.ArrayList;
+public class Main {
+public static void main(String[] args) {
+ArrayList<Integer> list1 = new ArrayList<Integer>();
+list1.add(1);
+list1.add(2);
+list1.add(1);
+list1.add(3);
+list1.add(2);
+list1.add(5);
+list1.add(5);
+list1.add(2);
+list1.add(4);
+ArrayList<Integer> list2 = new ArrayList<Integer>();
+list2.add(1);
+list2.add(2);
+list2.add(3);
+
+System.out.println(countInList(list1, list2));
+
+}
+public static int countInList(ArrayList<Integer> list1, ArrayList<Integer> list2){
+int count = 0;
+for(int i:list2){
+for(int j:list1){
+if(i==j){
+count++;
+}
+}
+}
+return count;
+}
+}
+```
+
+## P7
+```java
 
 ```
