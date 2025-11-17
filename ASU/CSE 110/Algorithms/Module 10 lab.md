@@ -161,3 +161,93 @@ System.out.print(arr.get(i));
 }
 }
 ```
+## p2
+```
+import java.util.ArrayList;
+public class Main {
+public static void main(String[] args) {
+ArrayList<Integer> arr = new ArrayList<Integer>();
+arr.add(1);
+arr.add(2);
+arr.add(1);
+arr.add(3);
+arr.add(2);
+arr.add(5);
+arr.add(6);
+arr.add(2);
+arr.add(4);
+System.out.println(count(arr, 2));
+
+}
+public static int count(ArrayList<Integer> arr, int num){
+int count = 0;
+for(int val : arr){
+if(val == num){
+count++;
+}
+}
+return count;
+}
+}
+```
+
+## p3
+```
+import java.util.ArrayList;
+public class Main {
+public static void main(String[] args) {
+ArrayList<Integer> arr = new ArrayList<Integer>();
+arr.add(1);
+arr.add(2);
+arr.add(1);
+arr.add(3);
+arr.add(2);
+arr.add(5);
+arr.add(6);
+arr.add(2);
+arr.add(4);
+System.out.println(countInRange(arr,1,6));
+}
+
+public static int countInRange(ArrayList<Integer> arr, int num1, int num2){
+int count = 0;
+for(int val : arr){
+if(val >= num1 && val <= num2)
+count++;
+}
+return(count);
+}
+}
+```
+
+## P4
+```
+import java.util.ArrayList;
+public class Main {
+public static void main(String[] args) {
+ArrayList<Integer> arr = new ArrayList<Integer>();
+arr.add(3);
+arr.add(2);
+arr.add(7);
+arr.add(5);
+arr.add(8);
+arr.add(6);
+System.out.println(getAllOdd(arr));
+}
+
+public static ArrayList<Integer> getAllOdd(ArrayList<Integer> arr){
+ArrayList<Integer> newArr = new ArrayList<Integer>();
+for(int val : arr){
+if(val % 2 == 1){
+newArr.add(val);
+}
+}
+return newArr;
+}
+}
+```
+
+## p5
+```
+
+```
