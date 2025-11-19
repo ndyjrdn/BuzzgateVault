@@ -23,3 +23,56 @@ Creating an object is called instantiation.
 new classname argument
 
 ![[Pasted image 20251119120050.png]]
+## 13.5 User defined functions
+In an object oriented programming language like Java, we can also create our own classes. We do this in Java by writing a class definition. Here is a simple definition for a class named Bunny.  Note that a class defines a type of object, and objects are things; therefore our class names should generally be nouns or noun-like.
+```java 
+class Bunny {
+	<classBody>
+}
+```
+
+- three parts of basic class def:
+	- keyword "class"
+	- className
+	- classBody
+- *A class definition creates a new data type,* so by defining a class named Bunny we have created a Bunny data type. This means we can now declare variables of type Bunny.
+## 13.6 useer defined classes and attributes
+Class diagram:
+![[Pasted image 20251119121154.png]]
+
+attributes are accessed with .notation.  
+myBunny.age.
+
+The state of the object is contained in it attributes.  This is encapsulation
+
+## 13.7 User defined classes and operations
+updated class diagram
+![[Pasted image 20251119121837.png]]
+``` java 
+class Bunny {
+   int age;
+   String name;
+
+   void hop() {
+       System.out.println(name + " hops around.");
+   }
+
+   void eat(String food) {
+       System.out.println(name + " eats the " + food + ".");
+   }
+
+   void sleep() {
+       System.out.println(name + " takes a nap.");
+   }
+
+}
+// note the methods are NOT static
+Bunny myBunny = new Bunny();
+
+//access methods with dot notations myBunny.hop()
+
+```
+
+## 13.8 Objects: introduction
+- In programming, an object is a grouping of data (variables) and operations that can be performed on that data (methods).
+- 
