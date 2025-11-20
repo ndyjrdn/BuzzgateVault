@@ -273,4 +273,20 @@ An erroneous unit test may fail even if the code being tested is correct. A comm
 
 ## 13.19 the "this" implicit parameter
 - implicit parameter is String in String.concat().  Java uses String as the first parmeter.
-- in a class with a method like below, the sideLength parameter in the setSidlength method update the objects sideLength field.  To ke
+- in a class with a method like below, the sideLength parameter in the setSidlength method update the objects sideLength field.  To keep them separate, this.sidelength is referring to the object field, not the method argument:
+```java
+public class ShapeSquare {
+   // Private fields
+   private double sideLength;
+
+   // Public methods
+   public void setSideLength(double sideLength) {
+      this.sideLength = sideLength;      // Field member    Parameter
+   }
+
+   public double getArea() {
+      return sideLength * sideLength; // Both refer to field
+   }
+}
+```
+
