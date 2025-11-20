@@ -75,4 +75,14 @@ Bunny myBunny = new Bunny();
 
 ## 13.8 Objects: introduction
 - In programming, an object is a grouping of data (variables) and operations that can be performed on that data (methods).
+- Abstraction means having the user interact with an item at a high level - with low lever internals hidden **information hiding or encapsulation**
+- abstract data type(ADT) is a data type whose creation and update are constrained to specific well-defined operations. A class can be used to implement an ADT.
+
+## 13.9 using a class
+- The class construct defines a new type that can group data and methods to form an object.
+- A class' **public member methods** indicate all operations a class user can perform on the object.
+- `Restaurant favLunchPlace = new Restaurant();` creates a Restaurant object named favLunchPlace.
+
+## 13.10 defining a class
+- private fields - variables that member methods can access but class users cannot
 - 
