@@ -290,3 +290,8 @@ public class ShapeSquare {
 }
 ```
 
+```java
+public static Bunny makeBunny(String name, int age){
+	Bunny name = new Bunny(name, age);
+}
+```
