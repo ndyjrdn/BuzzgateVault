@@ -259,3 +259,18 @@ Testbenches may be complex, with thousands of test cases. Various tools support 
 ### Erroneous unit tests
 
 An erroneous unit test may fail even if the code being tested is correct. A common error is for a programmer to assume that a failing unit test means that the code being tested has a bug. Such an assumption may lead the programmer to spend time trying to "fix" code that is already correct. Good practice is to inspect the code of a failing unit test before making changes to the code being tested.
+
+## 13.16 Constructor overloading
+- Programmers often want to provide different initialization values when creating a new object. A class creator can overload a constructor by defining multiple constructors differing in parameter types. When an object is created with the new operator, arguments can be passed to the constructor. The constructor with matching parameters will be called.
+- ==If a programmer defines any constructor, the compiler does not implicitly define a default constructor, so good practice is for the programmer to also explicitly define a default constructor so that an object creation like `new MyClass()` remains supported.==
+
+## 13.7 Objects and references
+- A reference is a variable type that refers to an object.
+- Variables of a class data type (and array types, discussed elsewhere) are reference variables.
+- Think of string.  The reference is to the first memory location.  When a class is created it reserves the needed memory, 
+- ==The new operator allocates memory for an object, then returns a reference to the object's location in memory. Thus, `travelTime = new TimeHrMin();` sets travelTime to refer to a new TimeHrMin object in memory. travelTime now refers to a valid object and the programmer may use travelTime to access the object's methods. The reference variable declaration and object creation may be combined into a single statement: `TimeHrMin travelTime = new TimeHrMin();`==
+- ![[Pasted image 20251120140358.png]]
+
+## 13.19 the "this" implicit parameter
+- implicit parameter is String in String.concat().  Java uses String as the first parmeter.
+- in a class with a method like below, the sideLength parameter in the setSidlength method update the objects sideLength field.  To ke
