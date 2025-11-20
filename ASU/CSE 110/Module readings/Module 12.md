@@ -295,3 +295,41 @@ public static Bunny makeBunny(String name, int age){
 	Bunny name = new Bunny(name, age);
 }
 ```
+
+class Main {
+
+public static void main(String[] args) {
+
+BankAccount ha = makeBankAccount("Bob Smith","21-573-6291");
+
+displayAccountInfo(ha);
+
+}
+
+  
+
+public static BankAccount makeBankAccount(String cust, String num{
+
+BankAccount ba = new BankAccount();
+
+ba.accountHolderName = cust;
+
+ba.accountNumber = num;
+
+ba.accountBalance = 0.0;
+
+return ba;
+
+}
+
+  
+
+public static void displayAccountInfo(BankAccount ref){
+
+System.out.println("Account Number : " + ref.accountNumber);
+
+System.out.println("Account Holder Name : " + ref.accountHolderName);
+
+System.out.println("Account Balance : $" + ref.accountBalance);
+
+}
