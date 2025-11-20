@@ -85,4 +85,50 @@ Bunny myBunny = new Bunny();
 
 ## 13.10 defining a class
 - private fields - variables that member methods can access but class users cannot
-- 
+
+## 13.11 mutators, accessors and private helpers
+- A classes public methods are either mutators are accessors:
+	- A ==mutator== may modify a classes fields (setter)
+	- An ==accessor== accesses but does not change the fields(getter)
+	
+### Example
+```java
+public class Restaurant {                          
+   private String name;
+   private int rating;
+
+   public void setName(String restaurantName) {  // Mutator
+      name = restaurantName;
+   }
+
+   public void setRating(int userRating) {       // Mutator
+      rating = userRating;
+   }
+
+   public String getName() {  // Accessor
+      return name;
+   }
+
+   public int getRating() {  // Accessor
+      return rating;
+   }
+
+   public void print() {      // Accessor
+      System.out.println(name + " -- " + rating);
+   }
+}
+
+public class MyRestaurant {
+  public static void main(String[] args) {
+     Restaurant myPlace = new Restaurant();
+     myPlace.setName("Maria's Diner");
+     myPlace.setRating(5);
+     System.out.print(myPlace.getName() + " is rated ");
+     System.out.println(myPlace.getRating());
+  }
+}
+```
+- private helper methods help public methods carry out tasks
+
+## 13.12 Initialization and constructors
+- Field initialization
