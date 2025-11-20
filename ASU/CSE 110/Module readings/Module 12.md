@@ -132,3 +132,130 @@ public class MyRestaurant {
 
 ## 13.12 Initialization and constructors
 - Field initialization
+- In a class a programmer can initialize fields in the field declaration.  Any object created of that class type will initially have those values
+- Example
+- 
+```java
+  public class Restaurant {   
+  ###########################
+  // The next 2 lines are init fields  
+  ##############################                     
+   private String name = "NoName";   
+   private int rating = -1;
+   public void setName(String restaurantName) {  
+      name = restaurantName;
+   }
+
+   public void setRating(int userRating) {
+      rating = userRating;
+   }
+
+   public void print() {  
+      System.out.println(name + " -- " + rating);
+   }
+}
+
+public class RestaurantFavorites {
+   public static void main(String[] args) {
+      Restaurant favLunchPlace = new Restaurant(); // Initializes fields with values in class definition
+
+      favLunchPlace.print();
+
+      favLunchPlace.setName("Central Deli");
+      favLunchPlace.setRating(4);
+      
+      favLunchPlace.print();
+   }
+}
+```
+
+- Constructors
+- ==Java provides a special class member method, known as a constructor, that is called when an object of that class type is created, and which can be used to initialize all fields. The constructor has the same name as the class. The constructor method has no return type, not even void. Ex: `public Restaurant() {...}` defines a constructor for the Restaurant class.==
+- A programmer specifies the constructor that should be called when creating an object. Ex: `Restaurant favLunchPlace = new Restaurant();` creates a new Restaurant object and calls the constructor Restaurant().
+- If a class does not have a programmer-defined constructor, then the Java compiler _implicitly_ defines a default constructor with no arguments. The Java compiler also initializes all fields to their default values.
+```java
+public class Restaurant {
+   private String name;
+   private int rating;
+
+   public Restaurant() {  // Constructor with no arguments      
+   name = "NoName";    // Default name: NoName indicates name was not set      
+   rating = -1;        // Default rating: -1 indicates rating was not set   }
+   public void setName(String restaurantName) {
+      name = restaurantName;
+   }
+
+   public void setRating(int userRating) {
+      rating = userRating;
+   }
+
+   public void print() {
+      System.out.println(name + " -- " + rating);
+   }
+}
+
+public class RestaurantFavorites {
+   public static void main(String[] args) {
+      Restaurant favLunchPlace = new Restaurant(); // Calls the constructor
+
+      favLunchPlace.print();
+
+      favLunchPlace.setName("Central Deli");
+      favLunchPlace.setRating(4);
+      favLunchPlace.print();
+   }
+}
+```
+
+## 13.4 defining main() in programmer defined class
+==main() is a static method that is independent of class objects. main() can access other static methods and static fields of the class, but cannot directly access non-static methods or fields==
+```java
+public class BasicCar {
+
+   // Total miles driven by the car
+   private int milesDriven;
+    
+   // Constructor assigns initial values to instance variables
+   public BasicCar() {
+      milesDriven = 0;   
+   }
+
+   // Drive the requested miles
+   public void drive(int tripMiles) {
+      milesDriven = milesDriven + tripMiles;
+   }
+
+   // Return total number of miles driven
+   public int checkOdometer() {
+      return milesDriven;
+   }
+
+   // Main() creates objects of type BasicCar and 
+   // calls methods to operate on the objects
+   public static void main(String [] args) {BasicCar redCorvette = new BasicCar();      
+   BasicCar fordMustang = new BasicCar();
+    redCorvette.drive(100);     
+    fordMustang.drive(75);      
+    fordMustang.drive(300);      
+    fordMustang.drive(50);   }
+}
+```
+![[Pasted image 20251120130232.png]]
+## 13.15 Unit Testing (classes)
+- A testbench is a program whose job is to thoroughly test another program (or portion) via a series of input/output checks known as test cases. ==Unit testing means to create and run a testbench for a specific item (or "unit") like a method or a class.==
+- 🎏**Features of a good testbench include:**
+
+- Automatic checks. Ex: Values are compared, as in `testData.GetNum1() != 100`. For conciseness, only fails are printed.
+- Independent test cases. Ex: The test case for GetAverage() assigns new values, vs. relying on earlier values.
+- 100% code coverage: Every line of code is executed. A good testbench would have more test cases than below.
+- Includes not just typical values but also border cases: Unusual or extreme test case values like 0, negative numbers, or large numbers.
+
+### Regression testing
+Regression testing means to retest an item like a class anytime that item is changed; if previously-passed test cases fail, the item has "regressed"
+A testbench should be maintained along with the item, to always be usable for regression testing.
+
+Testbenches may be complex, with thousands of test cases. Various tools support testing, and companies employ _test engineers_ who only test other programmers' items. ==A large percent, like 50% or more, of commercial software development time may go into testing.==
+
+### Erroneous unit tests
+
+An erroneous unit test may fail even if the code being tested is correct. A common error is for a programmer to assume that a failing unit test means that the code being tested has a bug. Such an assumption may lead the programmer to spend time trying to "fix" code that is already correct. Good practice is to inspect the code of a failing unit test before making changes to the code being tested.
