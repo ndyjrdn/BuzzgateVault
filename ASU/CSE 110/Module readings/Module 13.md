@@ -39,49 +39,43 @@ Life cycle of a Bunny Object:
 ```java
 class Bunny {
  public String name = "";
-
      public int age = 0;
-
-
-
-     public Bunny() {
-
-         // a default constructor that does nothing
-
+     public Bunny() { // a default constructor that does nothing
      }
-
-
      public Bunny(String name, int age) {
-
          this.name = name;
-
          this.age = age;
-
      }
-
-
-
      public void hop() {
-
          System.out.print(this.age + " year old " + this.name);
-
          System.out.println(" hops around.");
-
     }
-
  }
-
-
-
  public class Main {
-
      public static void main(String []args) {
-
          Bunny flopsy = new Bunny("Flopsy", 8);
-
          flopsy.hop();
-
      }
-
  }
 ```
+
+The life cycle of the Bunny object that will be created and used in the above code example is composed of six steps:
+
+1. Instantiation
+2. Initialization
+3. Construction
+4. Assignment
+5. Use
+6. Destruction
+https://learn.zybooks.com/zybook/2025FallB-X-CSE110-63951/chapter/14/section/6
+👆 for a good walk through of each step
+
+## 14.7 Using packages
+A package is a grouping of related types, classes, interfaces, and subpackage. The types, classes, and interfaces in a package are called package members. The following table lists several built-in Java packages and sample package members.
+[[Java Packages]]
+
+## 14.8  Example
+## 14.9  Example
+
+
+
