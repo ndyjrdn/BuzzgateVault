@@ -18,3 +18,70 @@ A class can also involve ArrayLists.  creating a Reviews class for managing an A
 - review of .get .add .remove etc from ArrayList
 
 ## 14.4 Parameters or reference types
+for reference variables if the var1=var2 sets them to the same reference rather than duplicating so this doesn't create a new object.  Just multiple references to the same object
+
+**THIS**
+
+![[Pasted image 20251121130350.png]]
+
+## 14.5 Static fields and methods
+- instance members are object specfic
+- Static members are shared by all objects of a class
+	- Data or methods
+- Static method like Math.sqrt() - don't have to declare a Math object
+- 
+![[Pasted image 20251121131744.png]]
+
+## 14.6 Mechanics of classes
+An object and the variable that refers to it are two different things.
+
+Life cycle of a Bunny Object:
+```java
+class Bunny {
+ public String name = "";
+
+     public int age = 0;
+
+
+
+     public Bunny() {
+
+         // a default constructor that does nothing
+
+     }
+
+
+     public Bunny(String name, int age) {
+
+         this.name = name;
+
+         this.age = age;
+
+     }
+
+
+
+     public void hop() {
+
+         System.out.print(this.age + " year old " + this.name);
+
+         System.out.println(" hops around.");
+
+    }
+
+ }
+
+
+
+ public class Main {
+
+     public static void main(String []args) {
+
+         Bunny flopsy = new Bunny("Flopsy", 8);
+
+         flopsy.hop();
+
+     }
+
+ }
+```
