@@ -14,11 +14,7 @@ A class can also involve ArrayLists.  creating a Reviews class for managing an A
 
 
       currRating = scnr.nextInt();
-      while (currRating >= 0) {
-         currReview = new Review();
-         currComment = scnr.nextLine(); // Gets rest of line
-         currReview.setRatingAndComment(currRating, currComment);
-         reviewList.add(currReview);
-         currRating = scnr.nextInt();
-      }
-   }
+## 14.3 ArrayList ADT
+- review of .get .add .remove etc from ArrayList
+
+## 14.4 Parameters or reference types
