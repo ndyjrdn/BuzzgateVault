@@ -1,6 +1,6 @@
 Hume charge ✅
 camp registrations
-Psych eval paperwork
+Psych eval paperwork ✅
 lights to areas
 routers/plugs
 school??
