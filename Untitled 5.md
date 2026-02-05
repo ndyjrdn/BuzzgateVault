@@ -48,4 +48,24 @@ void loop()
   digitalWrite(motorPin2, HIGH);
   delay(1000);
 }
+
+```
+
+
+
+```
+//light sensor
+int light;
+
+void setup()
+{
+  pinMode(A1, INPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+ light = analogRead(A1); 
+ Serial.println(light);
+}
 ```
