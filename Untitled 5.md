@@ -69,3 +69,22 @@ void loop()
  Serial.println(light);
 }
 ```
+
+```
+//servo --NOT SERVER
+#include <Servo.h>;
+Servo noopy;
+void setup()
+{
+  pinMode(3, OUTPUT);
+  noopy.attach(3);
+}
+
+void loop()
+{
+  noopy.write(180);
+  delay(1000);
+  noopy.write(90);
+  delay(1000);
+}
+```
