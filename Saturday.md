@@ -1,0 +1,6 @@
+- breakfast/groceries
+-  Rail
+- school honorlock.  Need to use the windows machine,
+- Tyler's diamond art bead holder.
+- Tyler's 3d printer
+- 
